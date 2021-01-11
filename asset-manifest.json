@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/akazachek.github.io/static/css/main.b7be7401.chunk.css",
-    "main.js": "/akazachek.github.io/static/js/main.c276c905.chunk.js",
-    "main.js.map": "/akazachek.github.io/static/js/main.c276c905.chunk.js.map",
-    "runtime-main.js": "/akazachek.github.io/static/js/runtime-main.8938569a.js",
-    "runtime-main.js.map": "/akazachek.github.io/static/js/runtime-main.8938569a.js.map",
-    "static/js/2.076e31ab.chunk.js": "/akazachek.github.io/static/js/2.076e31ab.chunk.js",
-    "static/js/2.076e31ab.chunk.js.map": "/akazachek.github.io/static/js/2.076e31ab.chunk.js.map",
-    "static/js/3.198d4b96.chunk.js": "/akazachek.github.io/static/js/3.198d4b96.chunk.js",
-    "static/js/3.198d4b96.chunk.js.map": "/akazachek.github.io/static/js/3.198d4b96.chunk.js.map",
+    "main.css": "/akazachek.github.io/static/css/main.8b1d8ff3.chunk.css",
+    "main.js": "/akazachek.github.io/static/js/main.8015670a.chunk.js",
+    "main.js.map": "/akazachek.github.io/static/js/main.8015670a.chunk.js.map",
+    "runtime-main.js": "/akazachek.github.io/static/js/runtime-main.a0d66683.js",
+    "runtime-main.js.map": "/akazachek.github.io/static/js/runtime-main.a0d66683.js.map",
+    "static/js/2.2d8733ba.chunk.js": "/akazachek.github.io/static/js/2.2d8733ba.chunk.js",
+    "static/js/2.2d8733ba.chunk.js.map": "/akazachek.github.io/static/js/2.2d8733ba.chunk.js.map",
+    "static/js/3.4ffd056b.chunk.js": "/akazachek.github.io/static/js/3.4ffd056b.chunk.js",
+    "static/js/3.4ffd056b.chunk.js.map": "/akazachek.github.io/static/js/3.4ffd056b.chunk.js.map",
     "index.html": "/akazachek.github.io/index.html",
-    "static/css/main.b7be7401.chunk.css.map": "/akazachek.github.io/static/css/main.b7be7401.chunk.css.map",
-    "static/js/2.076e31ab.chunk.js.LICENSE.txt": "/akazachek.github.io/static/js/2.076e31ab.chunk.js.LICENSE.txt",
+    "static/css/main.8b1d8ff3.chunk.css.map": "/akazachek.github.io/static/css/main.8b1d8ff3.chunk.css.map",
+    "static/js/2.2d8733ba.chunk.js.LICENSE.txt": "/akazachek.github.io/static/js/2.2d8733ba.chunk.js.LICENSE.txt",
     "static/media/me.0ea85df1.jpg": "/akazachek.github.io/static/media/me.0ea85df1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8938569a.js",
-    "static/js/2.076e31ab.chunk.js",
-    "static/css/main.b7be7401.chunk.css",
-    "static/js/main.c276c905.chunk.js"
+    "static/js/runtime-main.a0d66683.js",
+    "static/js/2.2d8733ba.chunk.js",
+    "static/css/main.8b1d8ff3.chunk.css",
+    "static/js/main.8015670a.chunk.js"
   ]
 }
