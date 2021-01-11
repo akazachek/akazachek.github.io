@@ -9,7 +9,7 @@ class About extends Component {
                 <img src = {pfp} className = "pfp"></img>
                 <br></br>
                 <h1> Alex Kazachek </h1>
-                <h3> Undergraduate mathematics student. </h3>
+                <h3> Hello! This website still isn't finished. Please go to <a href = "akazachek.com">akazachek.com</a> to view my current (working!) one.</h3>
                 <br></br>
                 <p class = "fullP">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium diam id eros elementum, vel ornare ligula tristique. Donec auctor nibh et est tincidunt fermentum. Mauris turpis est, mollis eu placerat sed, imperdiet ac augue. Nulla congue vitae velit in tristique. Donec hendrerit vestibulum feugiat. Morbi vel volutpat orci. Quisque ligula mi, accumsan et est vitae, ornare convallis enim.

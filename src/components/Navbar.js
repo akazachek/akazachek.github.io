@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavItem from './NavItem';
 
-class Navbar extends Component {
+class NavBar extends Component {
 
     constructor(props)
     {
@@ -25,7 +25,7 @@ class Navbar extends Component {
             <div class = "navContainer">
                 <nav>
                     <ul>
-                        <NavItem item = "About" tolink = "/" click = {this.handleClick}></NavItem>
+                        <NavItem item = "Who Am I?" tolink = "/" click = {this.handleClick}></NavItem>
                         <NavItem item = "Posts" tolink = "/Posts" click = {this.handleClick}></NavItem>
                         <NavItem item = "Contact" tolink = "/Contact" click = {this.handleClick}></NavItem>
                     </ul>
@@ -36,4 +36,4 @@ class Navbar extends Component {
 
 }
 
-export default Navbar
+export default NavBar
