@@ -2,20 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta 
-      name = "author"
-      content = "Alex Kazachek"
-    >
-    <meta
-      name = "description"
-      content = "Personal blog and information."
-    >
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <title>Alex Kazachek</title>
+    <!-- basic site info -->
+      <meta 
+        name = "author"
+        content = "Alex Kazachek"
+      >
+      <meta
+        name = "description"
+        content = "Personal blog and information."
+      >
+      <title>Alex Kazachek</title>
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!-- KaTeX -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" crossorigin="anonymous">
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+      <script>
+        function KaTeXRender() {
+          renderMathInElement(document.getElementById('KaTeXSec'), {
+            delimiters:
+            [
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+            ]}
+          );
+        }
+      </script>
   </head>
   <body>
     <div id="root"></div>

@@ -2,9 +2,16 @@ import React, { Component } from 'react';
 
 class JordanBrouwer extends Component {
     
+    componentDidMount() {
+        window.KaTeXRender();
+    }
+
     render() {
         return (
-            <p>Test Post Content</p>
+            <div>
+                <p>Test article. </p>
+                <p>Test equation \(x+3=5\). </p>
+            </div>
         )
     }
 
