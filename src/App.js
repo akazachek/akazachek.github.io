@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 
 /* pages in navbar */
 import About from './contents/About';
@@ -16,7 +16,7 @@ function App() {
     return (
       <Router>
         <div className = "App">
-          <Navbar />
+          <NavBar />
           {/* this will load the 'About' page by default but will not work locally */}
           <Route exact path = "/">
             <About />
