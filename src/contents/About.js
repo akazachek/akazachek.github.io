@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import pfp from '../media/me.jpg';
+import cv from '../media/cv.pdf';
 
 class About extends Component {
     
@@ -9,7 +10,7 @@ class About extends Component {
                 <img src = {pfp} className = "pfp"></img>
                 <br></br>
                 <h1> Alex Kazachek </h1>
-                <h3> Hello! This website still isn't finished. Please go to <a href = "akazachek.com">akazachek.com</a> to view my current (working!) one.</h3>
+                <h3> Hello! This website still isn't finished. Please go to <a href = "https://akazachek.com">akazachek.com</a> to view my current (working!) one.</h3>
                 <br></br>
                 <p class = "fullP">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium diam id eros elementum, vel ornare ligula tristique. Donec auctor nibh et est tincidunt fermentum. Mauris turpis est, mollis eu placerat sed, imperdiet ac augue. Nulla congue vitae velit in tristique. Donec hendrerit vestibulum feugiat. Morbi vel volutpat orci. Quisque ligula mi, accumsan et est vitae, ornare convallis enim.
@@ -26,7 +27,7 @@ class About extends Component {
                 <p class = "fullP">
                     Aenean scelerisque ultrices mi nec varius. Suspendisse convallis malesuada velit, a blandit eros pellentesque quis. Quisque fringilla dui quis enim dignissim, ac dapibus tellus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet lectus a ultrices tempor. Curabitur et tristique dui. Sed pretium neque vel justo egestas, et dapibus eros fermentum. Nulla facilisi. Etiam eros enim, euismod vel augue et, ultrices condimentum lectus.
                 </p>
-                <p class = "cv"> My CV is available <a id = "cvLink" href = "../media/cv.pdf">here</a> and was last updated 2020-01-11.</p>
+                <p class = "cv"> My CV is available <a id = "cvLink" href = {cv}>here</a> and was last updated 2020-01-11.</p>
             </div>     
         )
     }
