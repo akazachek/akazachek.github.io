@@ -1,14 +1,14 @@
 :root {
   --sidebar-flex:1.5;
   --coDiv-flex:6;
-  --fontsize-p:1.2rem;
+  --fontsize-contactHead: 2.5vw;
+  --fontsize-contactHandle: 2vw;
   --fontsize-nav: 3vw;
-  --typing-font:3rem;
   font-family: 'Quicksand', sans-serif;
   --active-colour: #d7dade;
   --active-colour-dark: #5b5c5b;
   --accent-colour: #9e42f5;
-  --accent-colour-dark: #28153b;
+  --accent-colour-dark: #4c2a6e;
 }
 *
 {
@@ -58,11 +58,12 @@
     color: inherit;
   }
   .navActive {
-    background: var(--active-colour);
+    background: var(--accent-colour);
     border-right-style: solid;
-    border-color: var(--active-colour-dark);
+    border-color: var(--accent-colour-dark);
     border-width: 2vw;
     box-sizing: border-box;
+    color: white !important;
   }
   /* hover effect courtesy of https://github.com/IanLunn/Hover */
   .hvr-sweep-to-right {
@@ -85,7 +86,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--accent-colour);
+    background: var(--active-colour);
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -97,13 +98,13 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     border-right-style: solid;
-    border-color: var(--accent-colour-dark);
+    border-color: var(--active-colour-dark);
     border-width: 2vw;
     box-sizing: border-box;
     width: 20vw;
   }
   .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: white;
+    color: black !important;
   }
   .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
     -webkit-transform: scaleX(1);
@@ -125,6 +126,26 @@
   .fullP {
     margin-bottom: 1em; 
     text-indent: 2em;
+  }
+  .cv {
+    width: 100%;
+    text-align: center;
+    font-size: var(--fontsize-contactHandle);
+  }
+  .about a {
+    text-decoration: none;
+    color: var(--accent-colour);
+  }
+  .about a:visited {
+    color: inherit;
+  }
+  #cvLink {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--accent-colour);
+  }
+  #cvLink:visited {
+    color: var(--accent-colour);
   }
 
 /* posts and post page */
@@ -173,5 +194,44 @@
     padding: 1vh;
   }
   .post {
+    position: relative;
     padding-bottom: 1vh;
+  }
+
+/* contact page */
+  .contactHead {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3vh;
+  }
+  .contactMessage {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: var(--fontsize-contactHead);
+  }
+  .contactPhoto {
+    text-align: right;
+    vertical-align: middle;
+    width: 80%;
+  }
+  .contactPhoto img {
+    border-radius: 20%;
+    width: 75%;
+    height: auto;
+  }
+  .contactInfo {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .handleIcon {
+    width: 11%;
+  }
+  .handle a {
+    font-size: var(--fontsize-contactHandle);
+    text-decoration: none;
+    color: black;
+  }
+  .handle a:visited {
+    color: inherit;
   }

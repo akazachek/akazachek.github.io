@@ -1,61 +1,46 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 
-class PostPreview extends Component {
+const PostPreview = (props) => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            postOpen: false
-        }
-        this.handlePostOpen = this.handlePostOpen.bind(this);
-    }
+    const [postOpen, postToggle] = useState(false);
+    const postProps = useSpring({
+        /* https://react-spring-visualizer.com/ */
+        config: { mass: 1, tension: 280, friction: 60 },
+        /* the innerHeight is a way to achieve vh measures */
+        height: postOpen ? 'auto' : (window.innerHeight / 20),
+        opacity: postOpen ? 1 : 0,
+        marginTop: postOpen ? 0 : -30,
+        from: {opacity: 0, marginTop: -30, height: 20}
+    });
 
-    handlePostOpen() {
-
-        this.setState({
-            postOpen: !this.state.postOpen
-        });
-
-        if (!this.state.postOpen) {
-            document.getElementById(this.props.date).classList.add('postOpen')
-        } else {
-            document.getElementById(this.props.date).classList.remove('postOpen')
-        }
-
-    }
-
-    render() {
-        return (
-            <div>
-                <li className = "postPreview" id = {this.props.date} onClick = {this.handlePostOpen}>
-                    <table className = "postHead">
-                        <tr>
-                            <td className = "postTitle">
-                                <h1>{this.props.name}</h1>
-                            </td>
-                            <td className = "postDate">
-                                <h4>{this.props.date}</h4>
-                            </td>
-                        </tr>
-                    </table>
-                    <div>
-                        <p className = "postSummary">
-                            {this.props.summary}
-                        </p>
-                    </div>
-                </li>
-                {
-                    this.state.postOpen?
-                        <div className = "post">
-                            {this.props.full}
-                        </div>
-                    :
-                        <div></div>
-                }
-            </div>
-        );
-    }
+    return (
+        <div>
+            <li className = "postPreview" id = {props.date} onClick = {() => postToggle(postOpen => !postOpen)}>
+                <table className = "postHead">
+                    <tr>
+                        <td className = "postTitle">
+                            <h1>{props.name}</h1>
+                        </td>
+                        <td className = "postDate">
+                            <h4>{props.date}</h4>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <p id = {props.dummyID} className = "postSummary">
+                        {props.summary}
+                    </p>
+                </div>
+            </li>
+            {
+                <animated.div className = "post" style = {postProps}>
+                    {props.full}
+                </animated.div>
+            }
+        </div>
+    );
 
 }
 
-export default PostPreview
+export default PostPreview;

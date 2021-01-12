@@ -26,6 +26,7 @@ class About extends Component {
                 <p class = "fullP">
                     Aenean scelerisque ultrices mi nec varius. Suspendisse convallis malesuada velit, a blandit eros pellentesque quis. Quisque fringilla dui quis enim dignissim, ac dapibus tellus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet lectus a ultrices tempor. Curabitur et tristique dui. Sed pretium neque vel justo egestas, et dapibus eros fermentum. Nulla facilisi. Etiam eros enim, euismod vel augue et, ultrices condimentum lectus.
                 </p>
+                <p class = "cv"> My CV is available <a id = "cvLink" href = "../media/cv.pdf">here</a> and was last updated 2020-01-11.</p>
             </div>     
         )
     }
