@@ -15,6 +15,9 @@
   margin:0;
   padding: 0;
 }
+.katex { 
+  font-size: 1em !important; 
+} 
 
 .App {
   display: flex;
@@ -123,7 +126,7 @@
     width: 40%;
     height: auto;
   }
-  .fullP {
+  .fullP, .postContent p {
     margin-bottom: 1em; 
     text-indent: 2em;
   }
@@ -196,6 +199,31 @@
   .post {
     position: relative;
     padding-bottom: 1vh;
+  }
+  .figureContainer {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  .figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .figure img {
+    width: 40%;
+    height: auto;
+    position: relative;
+  }
+  .caption {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .theorem p, .proof p {
+    text-indent: 0em;
+    text-align: left;
   }
 
 /* contact page */

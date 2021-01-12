@@ -7,7 +7,7 @@ class NavBar extends Component {
     {
         super(props);
         this.state = {
-            'NavActiveItem':''
+            'NavActiveItem':'Who Am I?'
         }
     }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PostPreview from '../components/PostPreview';
 
 /* posts */
-import JordanBrouwer from './writing/JordanBrouwer';
+import JordanBrouwer from './writing/2020-12-05/JordanBrouwer';
 
 class Posts extends Component {
 
