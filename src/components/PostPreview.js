@@ -1,42 +1,43 @@
-import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+import React, { useState, useEffect } from 'react';
+import { useTransition, animated } from 'react-spring';
 
-const PostPreview = (props) => {
+const PostPreview = (props_) => {
 
     const [postOpen, postToggle] = useState(false);
-    const postProps = useSpring({
-        /* https://react-spring-visualizer.com/ */
-        config: { mass: 1, tension: 280, friction: 60 },
-        /* the innerHeight is a way to achieve vh measures */
-        height: postOpen ? 'auto' : (window.innerHeight / 20),
-        opacity: postOpen ? 1 : 0,
-        marginTop: postOpen ? 0 : -30,
-        from: {opacity: 0, marginTop: -30, height: 20}
+    const postTransition = useTransition(postOpen, null, {
+        from: { zIndex: -1, opacity: 0, transform: 'translateX(-30vw)' },
+        enter: { zIndex: -1, opacity: 1, transform: 'translateX(0vw)' },
+        leave: { zIndex: -1, opacity: 0, transform: 'translateX(-30vw)' },
     });
 
     return (
         <div>
-            <li className = "postPreview" id = {props.date} onClick = {() => postToggle(postOpen => !postOpen)}>
+            <li className = "postPreview" id = {props_.date} onClick = {() => postToggle(postOpen => !postOpen)}>
                 <table className = "postHead">
                     <tr>
                         <td className = "postTitle">
-                            <h2>{props.name}</h2>
+                            <h2>{props_.name}</h2>
                         </td>
                         <td className = "postDate">
-                            <h4>{props.date}</h4>
+                            <h4>{props_.date}</h4>
                         </td>
                     </tr>
                 </table>
                 <div>
-                    <p id = {props.dummyID} className = "postSummary">
-                        {props.summary}
+                    <p id = {props_.dummyID} className = "postSummary">
+                        {props_.summary}
                     </p>
                 </div>
             </li>
             {
-                <animated.div className = "post" style = {postProps}>
-                    {props.full}
-                </animated.div>
+                /* this will not work if i map anything --other-- than literally the word 'props' so i had to rename the PostPreview props */
+                postTransition.map( ({ item, key, props }) =>
+                    item && (
+                        <animated.div className = "post" key = {key} style = {props}>
+                            {props_.full}
+                        </animated.div>
+                    )
+                )
             }
         </div>
     );

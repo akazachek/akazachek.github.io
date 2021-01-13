@@ -1,3 +1,11 @@
+/* latin */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* 日本語 */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+p, a {
+  font-family: 'Quicksand', 'M PLUS 1p', 'sans serif';
+}
+
 :root {
   --sidebar-flex:1.5;
   --coDiv-flex:6;
@@ -5,20 +13,22 @@
   --fontsize-contactHandle: 2vw;
   --fontsize-nav: 3vw;
   --fontsize-norm: 1.2em;
-  font-family: 'Quicksand', sans-serif;
   --active-colour: #d7dade;
   --active-colour-dark: #5b5c5b;
   --accent-colour: #9e42f5;
   --accent-colour-dark: #4c2a6e;
 }
-*
-{
+
+/* tbh idk why this is here */
+* {
   margin:0;
   padding: 0;
 }
+
 .katex { 
   font-size: 1em !important; 
-} 
+  font-family: 'KaTeX_Main' !important;
+}
 
 .App {
   display: flex;
@@ -44,6 +54,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 1000;
   }
   nav {
     width: 20vw;
@@ -131,17 +142,18 @@
     margin-bottom: 1em; 
     text-indent: 2em;
     font-size: var(--fontsize-norm);
+    line-height: 150%;
   }
   .cv {
     width: 100%;
     text-align: center;
     font-size: var(--fontsize-contactHandle);
   }
-  .about a {
-    text-decoration: none;
+  .about a, .postContent p a {
+    text-decoration: strong;
     color: var(--accent-colour);
   }
-  .about a:visited {
+  .about a:visited, .postContent p a:visited {
     color: inherit;
   }
   #cvLink {
@@ -171,7 +183,6 @@
   }
   .postPreview {
     position: relative;
-    z-index: 314;
     width: 100%;
     height: auto;
     padding: 1vw;
@@ -191,6 +202,7 @@
     text-align: left;
     padding: 0;
     margin: 0;
+    width: 80%;
   }
   .postDate {
     text-align: right;
@@ -200,7 +212,7 @@
     padding: 1vh;
   }
   .post {
-    position: relative;
+    transition-duration: 0.4s;
     padding-bottom: 1vh;
   }
   .postContent {
