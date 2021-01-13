@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/akazachek.github.io/static/css/main.4a7757d0.chunk.css",
-    "main.js": "/akazachek.github.io/static/js/main.a9ef98dd.chunk.js",
-    "main.js.map": "/akazachek.github.io/static/js/main.a9ef98dd.chunk.js.map",
+    "main.css": "/akazachek.github.io/static/css/main.cd5033d5.chunk.css",
+    "main.js": "/akazachek.github.io/static/js/main.fbd0187a.chunk.js",
+    "main.js.map": "/akazachek.github.io/static/js/main.fbd0187a.chunk.js.map",
     "runtime-main.js": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js",
     "runtime-main.js.map": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js.map",
-    "static/js/2.31d64ad6.chunk.js": "/akazachek.github.io/static/js/2.31d64ad6.chunk.js",
-    "static/js/2.31d64ad6.chunk.js.map": "/akazachek.github.io/static/js/2.31d64ad6.chunk.js.map",
+    "static/js/2.10f71e37.chunk.js": "/akazachek.github.io/static/js/2.10f71e37.chunk.js",
+    "static/js/2.10f71e37.chunk.js.map": "/akazachek.github.io/static/js/2.10f71e37.chunk.js.map",
     "static/js/3.ffb43247.chunk.js": "/akazachek.github.io/static/js/3.ffb43247.chunk.js",
     "static/js/3.ffb43247.chunk.js.map": "/akazachek.github.io/static/js/3.ffb43247.chunk.js.map",
     "index.html": "/akazachek.github.io/index.html",
-    "static/css/main.4a7757d0.chunk.css.map": "/akazachek.github.io/static/css/main.4a7757d0.chunk.css.map",
-    "static/js/2.31d64ad6.chunk.js.LICENSE.txt": "/akazachek.github.io/static/js/2.31d64ad6.chunk.js.LICENSE.txt",
+    "static/css/main.cd5033d5.chunk.css.map": "/akazachek.github.io/static/css/main.cd5033d5.chunk.css.map",
+    "static/js/2.10f71e37.chunk.js.LICENSE.txt": "/akazachek.github.io/static/js/2.10f71e37.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/akazachek.github.io/static/media/MPLUS1p-Light.863f7545.ttf",
     "static/media/camel.f5f93e62.jpg": "/akazachek.github.io/static/media/camel.f5f93e62.jpg",
     "static/media/cv.0980d66f.pdf": "/akazachek.github.io/static/media/cv.0980d66f.pdf",
     "static/media/fig1(koch).b55a4c6d.png": "/akazachek.github.io/static/media/fig1(koch).b55a4c6d.png",
@@ -22,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.22d11cf8.js",
-    "static/js/2.31d64ad6.chunk.js",
-    "static/css/main.4a7757d0.chunk.css",
-    "static/js/main.a9ef98dd.chunk.js"
+    "static/js/2.10f71e37.chunk.js",
+    "static/css/main.cd5033d5.chunk.css",
+    "static/js/main.fbd0187a.chunk.js"
   ]
 }
