@@ -20,7 +20,7 @@ const PostPreview = (props) => {
                 <table className = "postHead">
                     <tr>
                         <td className = "postTitle">
-                            <h1>{props.name}</h1>
+                            <h2>{props.name}</h2>
                         </td>
                         <td className = "postDate">
                             <h4>{props.date}</h4>
