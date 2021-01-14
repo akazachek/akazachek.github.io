@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/akazachek.github.io/static/css/main.75c38057.chunk.css",
-    "main.js": "/akazachek.github.io/static/js/main.0f140bb1.chunk.js",
-    "main.js.map": "/akazachek.github.io/static/js/main.0f140bb1.chunk.js.map",
+    "main.css": "/akazachek.github.io/static/css/main.75218187.chunk.css",
+    "main.js": "/akazachek.github.io/static/js/main.cd2435c3.chunk.js",
+    "main.js.map": "/akazachek.github.io/static/js/main.cd2435c3.chunk.js.map",
     "runtime-main.js": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js",
     "runtime-main.js.map": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js.map",
     "static/js/2.10f71e37.chunk.js": "/akazachek.github.io/static/js/2.10f71e37.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.ffb43247.chunk.js": "/akazachek.github.io/static/js/3.ffb43247.chunk.js",
     "static/js/3.ffb43247.chunk.js.map": "/akazachek.github.io/static/js/3.ffb43247.chunk.js.map",
     "index.html": "/akazachek.github.io/index.html",
-    "static/css/main.75c38057.chunk.css.map": "/akazachek.github.io/static/css/main.75c38057.chunk.css.map",
+    "static/css/main.75218187.chunk.css.map": "/akazachek.github.io/static/css/main.75218187.chunk.css.map",
     "static/js/2.10f71e37.chunk.js.LICENSE.txt": "/akazachek.github.io/static/js/2.10f71e37.chunk.js.LICENSE.txt",
     "static/media/camel.f5f93e62.jpg": "/akazachek.github.io/static/media/camel.f5f93e62.jpg",
     "static/media/cv.0ec6bd6a.pdf": "/akazachek.github.io/static/media/cv.0ec6bd6a.pdf",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.22d11cf8.js",
     "static/js/2.10f71e37.chunk.js",
-    "static/css/main.75c38057.chunk.css",
-    "static/js/main.0f140bb1.chunk.js"
+    "static/css/main.75218187.chunk.css",
+    "static/js/main.cd2435c3.chunk.js"
   ]
 }
