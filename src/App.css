@@ -1,16 +1,17 @@
 /* latin */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 /* 日本語 */
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap");
 /* русский */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap');
-p, a {
-  font-family: 'Quicksand', 'M PLUS 1p', 'Raleway', 'sans serif';
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap");
+p,
+a {
+  font-family: "Quicksand", "M PLUS 1p", "Raleway", "sans serif";
 }
 
 :root {
-  --sidebar-flex:1.5;
-  --coDiv-flex:6;
+  --sidebar-flex: 1.5;
+  --coDiv-flex: 6;
   --fontsize-contactHead: 2.5vw;
   --fontsize-contactHandle: 2vw;
   --fontsize-nav: 3vw;
@@ -23,269 +24,282 @@ p, a {
 
 /* tbh idk why this is here */
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.katex { 
-  font-size: 1em !important; 
-  font-family: 'KaTeX_Main' !important;
+.katex {
+  font-size: 1em !important;
+  font-family: "KaTeX_Main" !important;
 }
 
 .App {
   display: flex;
   width: 100vw;
   min-height: 100vh;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 /* the right half of the page */
 .coDiv {
-  padding: 100px ;
+  padding: 100px;
   flex: var(--coDiv-flex);
   margin-left: 17vw;
 }
 
 /* nav bar */
-  .navContainer {
-    position: fixed;
-    height: 100%;
-    width: 20vw;
-    top: 0;
-    left: 0;
-    background-color: #f4f5f9;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: 1000;
-  }
-  nav {
-    width: 20vw;
-  }
-  nav ul li {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    line-height: 10vh;
-  }
-  nav ul li a {
-    text-decoration: none;
-    font-size: var(--fontsize-nav);
-  }
-  nav ul li a:visited {
-    color: inherit;
-  }
-  .navActive {
-    background: var(--accent-colour);
-    border-right-style: solid;
-    border-color: var(--accent-colour-dark);
-    border-width: 2vw;
-    box-sizing: border-box;
-    color: white !important;
-  }
-  /* hover effect courtesy of https://github.com/IanLunn/Hover */
-  .hvr-sweep-to-right {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .hvr-sweep-to-right:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--active-colour);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    border-right-style: solid;
-    border-color: var(--active-colour-dark);
-    border-width: 2vw;
-    box-sizing: border-box;
-    width: 20vw;
-  }
-  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: black !important;
-  }
-  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+.navContainer {
+  position: fixed;
+  height: 100%;
+  width: 20vw;
+  top: 0;
+  left: 0;
+  background-color: #f4f5f9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 1000;
+}
+nav {
+  width: 20vw;
+}
+nav ul li {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  line-height: 10vh;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: var(--fontsize-nav);
+}
+nav ul li a:visited {
+  color: inherit;
+}
+.navActive {
+  background: var(--accent-colour);
+  border-right-style: solid;
+  border-color: var(--accent-colour-dark);
+  border-width: 2vw;
+  box-sizing: border-box;
+  color: white !important;
+}
+/* hover effect courtesy of https://github.com/IanLunn/Hover */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--active-colour);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-right-style: solid;
+  border-color: var(--active-colour-dark);
+  border-width: 2vw;
+  box-sizing: border-box;
+  width: 20vw;
+}
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: black !important;
+}
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 /* about page */
-  .about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .pfp {
-    border-radius: 50%;
-    width: 40%;
-    height: auto;
-  }
-  .about p, .postContent p {
-    margin-bottom: 1em; 
-    text-indent: 2em;
-    font-size: var(--fontsize-norm);
-    line-height: 150%;
-  }
-  .about p a, .about h3 a, .postContent p a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--accent-colour);
-  }
-  .about p a:visited, .about h3 a, .postContent p a:visited {
-    text-decoration: none;
-    color: var(--accent-colour);
-  }
-  #cvLink {
-    font-weight: bolder;
-    text-decoration: none;
-    color: var(--accent-colour);
-  }
-  #cvLink:visited {
-    color: var(--accent-colour);
-  }
-  .cv {
-    width: 100%;
-    text-align: center;
-    font-size: var(--fontsize-contactHandle);
-  }
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+}
+.pfp {
+  border-radius: 50%;
+  width: 40%;
+  height: auto;
+}
+.about p,
+.postContent p {
+  margin-bottom: 1em;
+  text-indent: 2em;
+  font-size: var(--fontsize-norm);
+  line-height: 150%;
+}
+.about p a,
+.about h3 a,
+.postContent p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent-colour);
+}
+.about p a:visited,
+.about h3 a,
+.postContent p a:visited {
+  text-decoration: none;
+  color: var(--accent-colour);
+}
+#cvLink {
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--accent-colour);
+}
+#cvLink:visited {
+  color: var(--accent-colour);
+}
+.cv {
+  width: 100%;
+  text-align: center;
+  font-size: var(--fontsize-contactHandle);
+}
 
 /* posts and post page */
-  .posts {
-      width: 100%;
-      display: inline-block;
-      font-size: var(--fontsize-norm);
-    }
-  .posts ul {
-    list-style-type: none
-  }
-  .posts a {
-    text-decoration: none;
-    color: black;
-  }
-  .posts a:visited {
-    color: black;
-  }
-  .postPreview {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 1vw;
-    margin-bottom: 1vh;
-    border: 3px solid var(--accent-colour);
-    border-radius: 1vw;
-  }
-  .postPreview:hover, .postOpen {
-    border: 3px solid var(--accent-colour-dark);
-    border-radius: 1vw;
-  }
-  .postHead {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .postTitle {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    width: 80%;
-  }
-  .postDate {
-    text-align: right;
-  }
-  .postSummary {
-    width: 100%;
-    padding: 1vh;
-  }
-  .post {
-    transition-duration: 0.4s;
-    padding-bottom: 1vh;
-  }
-  .postContent {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .figureContainer {
-    margin-top: 1vh;
-    margin-bottom: 2vh;
-    width: 100%;
-  }
-  .figure {
-    height: 30vh;
-    width: 70%;
-    margin-left: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .figure img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .caption {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-  .theorem p, .proof p {
-    text-indent: 0em;
-    text-align: left;
-  }
+.posts {
+  width: 100%;
+  display: inline-block;
+  font-size: var(--fontsize-norm);
+}
+.posts ul {
+  list-style-type: none;
+}
+.posts a {
+  text-decoration: none;
+  color: black;
+}
+.posts a:visited {
+  color: black;
+}
+.postPreview {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1vw;
+  margin-bottom: 1vh;
+  border: 3px solid var(--accent-colour);
+  border-radius: 1vw;
+}
+.postPreview:hover,
+.postOpen {
+  border: 3px solid var(--accent-colour-dark);
+  border-radius: 1vw;
+}
+.postHead {
+  width: 100%;
+  border-collapse: collapse;
+}
+.postTitle {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+.postDate {
+  text-align: right;
+}
+.postSummary {
+  width: 100%;
+  padding: 1vh;
+}
+.post {
+  transition-duration: 0.4s;
+  padding-bottom: 1vh;
+}
+.postContent {
+  width: 80%;
+  margin-left: 10%;
+}
+.figureContainer {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  width: 100%;
+}
+.figure {
+  height: 30vh;
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figure img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.caption {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.theorem p,
+.proof p {
+  text-indent: 0em;
+  text-align: left;
+}
 
 /* contact page */
-  .contactHead {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 3vh;
-  }
-  .contactMessage {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    font-size: var(--fontsize-contactHead);
-  }
-  .contactPhoto {
-    text-align: center;
-    vertical-align: middle;
-    width: auto;
-  }
-  .contactPhoto img {
-    border-radius: 20%;
-    width: 55vh;
-    height: auto;
-  }
-  .contactInfo {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .handleIcon {
-    width: 11%;
-  }
-  .handle a {
-    font-size: var(--fontsize-contactHandle);
-    text-decoration: none;
-    color: black;
-  }
-  .handle a:visited {
-    color: inherit;
-  }
+.contactHead {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3vh;
+}
+.contactMessage {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: var(--fontsize-contactHead);
+}
+.contactPhoto {
+  text-align: center;
+  vertical-align: middle;
+  width: auto;
+}
+.contactPhoto img {
+  border-radius: 20%;
+  width: 55vh;
+  height: auto;
+}
+.contactInfo {
+  width: 100%;
+  border-collapse: collapse;
+}
+.handleIcon {
+  width: 11%;
+}
+.handle a {
+  font-size: var(--fontsize-contactHandle);
+  text-decoration: none;
+  color: black;
+}
+.handle a:visited {
+  color: inherit;
+}

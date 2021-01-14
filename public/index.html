@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <!-- basic site info -->
-      <meta 
-        name = "author"
-        content = "Alex Kazachek"
-      >
-      <meta
-        name = "description"
-        content = "Personal blog and information."
-      >
-      <title>Alex Kazachek</title>
-      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="author" content="Alex Kazachek" />
+    <meta name="description" content="Personal blog and information." />
+    <title>Alex Kazachek</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <!-- KaTeX -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" crossorigin="anonymous">
-      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
-      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
-      <script>
-        function KaTeXRender() {
-          renderMathInElement(document.body, {
-            delimiters:
-            [
-            {left: "\\(", right: "\\)", display: false},
-            {left: "\\[", right: "\\]", display: true}
-            ]}
-          );
-        }
-      </script>
-      <!-- it's hard to get KaTeX to load on the first page without importing it 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function KaTeXRender() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "\\(", right: "\\)", display: false },
+            { left: "\\[", right: "\\]", display: true }
+          ]
+        });
+      }
+    </script>
+    <!-- it's hard to get KaTeX to load on the first page without importing it 
       --- into React, which in turn would make coding autorendering difficult, 
       --- so this 1s delay will have to do
       -->
-      <script>
-        function firstLoadKaTeX() {
-          var observer = new MutationObserver(function (mutations, me) {
-            var aboutSec = document.getElementById('aboutSec');
-            if (aboutSec) {
-              KaTeXRender();
-              me.disconnect;
-              return;
-            }
-          });
+    <script>
+      function firstLoadKaTeX() {
+        var observer = new MutationObserver(function (mutations, me) {
+          var aboutSec = document.getElementById("aboutSec");
+          if (aboutSec) {
+            KaTeXRender();
+            me.disconnect;
+            return;
+          }
+        });
 
-          observer.observe(document, {
-            childList: true,
-            subtree: true
-          });
-        }
-      </script>
+        observer.observe(document, {
+          childList: true,
+          subtree: true
+        });
+      }
+    </script>
   </head>
-  <body onload = 'firstLoadKaTeX()'>
+  
+  <body onload="firstLoadKaTeX()">
     <div id="root"></div>
   </body>
+
 </html>
