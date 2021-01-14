@@ -209,7 +209,7 @@ class JordanBrouwer extends Component {
         </p>
         <Theorem
           no="3"
-          name="Extension"
+          name="Extension Theorem"
           statement="
                 Let \(f\colon X\to Y\) be smooth between a manifold \(X\) and a boundaryless manifold \(Y\), and \(C\subseteq X\) be closed. If \(Z\) is a closed boundaryless submanifold of \(Y\) such that \(f\pitchfork Z\) on \(C\) and \(\partial f\pitchfork Z\) on \(C\cap\partial X\), there is some \(g\sim f\) such that \(g\pitchfork Z\) and \(\partial g\pitchfork Z\) and \(g\equiv f\) on a neighbourhood of \(C\)."
         />
@@ -259,7 +259,7 @@ class JordanBrouwer extends Component {
         />
         <Theorem
           no="5"
-          name="Boundary"
+          name="Boundary Theorem"
           statement="
                 If \(W\) is compact with \(\partial W=X\), and \(g\colon X\to Y\) can be extended to \(W\), then \(I_2(g,Z)=0\) for all closed submanifolds \(Z\) in \(Y\) such that \(\operatorname{dim}X+\operatorname{dim}Z=\operatorname{dim}Y\)."
         />
