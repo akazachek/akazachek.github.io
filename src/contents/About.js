@@ -4,12 +4,15 @@ import cv from '../media/cv.pdf';
 
 class About extends Component {
 
-    static pfpAlt = 'Headshot of myself';
+    state = {
+        pfpAlt: 'Headshot',
+        cvDate: '2021-01-13'
+    }
     
     render() {
         return (
             <div className = "coDiv about" id = 'aboutSec'>
-                <img src = {pfp} alt = {this.pfpAlt} className = "pfp"></img>
+                <img src = {pfp} alt = {this.state.pfpAlt} className = "pfp"></img>
                 <br></br>
                 <h1> Hey, I'm Alex! </h1>
                 <h3 style = {{paddingTop: '1vh'}}> I'm a second year undergraduate at <a href = 'https://www.uwo.ca/'>UWO</a> studying mathematics and data science.</h3>
@@ -29,7 +32,7 @@ class About extends Component {
                 <p>
                     In my free time I enjoy speedrunning (my favourite speedgames are Mirror's Edge and Fallout 4). I'm also interested in finance, working on the trading podcast Nikkei Bets with my friend. Typography is also somewhat of a passion of mine, and I spend perhaps a little bit too much time working on the small details in all my \(\LaTeX\) templates.
                 </p>
-                <p class = "cv"> My full CV is available <a id = "cvLink" href = {cv}>here</a> and was last updated 2020-01-11.</p>
+                <p class = "cv"> My full CV is available <a id = "cvLink" href = {cv}>here</a> and was last updated {this.state.cvDate}.</p>
             </div>     
         )
     }

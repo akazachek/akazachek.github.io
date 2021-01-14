@@ -10,7 +10,9 @@ var vh = window.innerHeight / 100;
 
 class Contact extends Component {
 
-    static pfpAlt = 'Me on a camel in the Tottori sand dunes';
+    state = {
+        pfpAlt: 'Me riding a camel in the Tottori sanddunes'
+    }
 
     render() {
         return (
@@ -21,7 +23,7 @@ class Contact extends Component {
                             <h1>Thank you for reaching out!</h1>
                         </td>
                         <td className = "contactPhoto">
-                            <img src = {pfp} alt = {this.pfpAlt}></img>
+                            <img src = {pfp} alt = {this.state.pfpAlt}></img>
                         </td>
                     </tr>
                 </table>
