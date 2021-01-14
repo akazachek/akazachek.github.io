@@ -7,7 +7,7 @@ class Figure extends Component {
             <table class = 'figureContainer'>
                 <tr>
                     <td class = 'figure'>
-                        <img src = {this.props.src}></img>
+                        <img src = {this.props.src} alt = {this.props.caption} ></img>
                     </td>
                 </tr>
                 <tr>

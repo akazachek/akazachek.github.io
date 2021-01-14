@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /* 日本語 */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+/* русский */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap');
 p, a {
-  font-family: 'Quicksand', 'M PLUS 1p', 'sans serif';
+  font-family: 'Quicksand', 'M PLUS 1p', 'Raleway', 'sans serif';
 }
 
 :root {
@@ -138,23 +140,20 @@ p, a {
     width: 40%;
     height: auto;
   }
-  .fullP, .postContent p {
+  .about p, .postContent p {
     margin-bottom: 1em; 
     text-indent: 2em;
     font-size: var(--fontsize-norm);
     line-height: 150%;
   }
-  .cv {
-    width: 100%;
-    text-align: center;
-    font-size: var(--fontsize-contactHandle);
-  }
-  .about a, .postContent p a {
-    text-decoration: strong;
+  .about p a, .about h3 a, .postContent p a {
+    text-decoration: none;
+    font-weight: bold;
     color: var(--accent-colour);
   }
-  .about a:visited, .postContent p a:visited {
-    color: inherit;
+  .about p a:visited, .about h3 a:visited, .postContent p a:visited {
+    text-decoration: none;
+    color: var(--accent-colour);
   }
   #cvLink {
     font-weight: bolder;
@@ -163,6 +162,11 @@ p, a {
   }
   #cvLink:visited {
     color: var(--accent-colour);
+  }
+  .cv {
+    width: 100%;
+    text-align: center;
+    font-size: var(--fontsize-contactHandle);
   }
 
 /* posts and post page */

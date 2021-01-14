@@ -20,7 +20,7 @@
       <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
       <script>
         function KaTeXRender() {
-          renderMathInElement(document.getElementById('KaTeXSec'), {
+          renderMathInElement(document.body, {
             delimiters:
             [
             {left: "\\(", right: "\\)", display: false},
@@ -29,8 +29,29 @@
           );
         }
       </script>
+      <!-- it's hard to get KaTeX to load on the first page without importing it 
+      --- into React, which in turn would make coding autorendering difficult, 
+      --- so this 1s delay will have to do
+      -->
+      <script>
+        function firstLoadKaTeX() {
+          var observer = new MutationObserver(function (mutations, me) {
+            var aboutSec = document.getElementById('aboutSec');
+            if (aboutSec) {
+              KaTeXRender();
+              me.disconnect;
+              return;
+            }
+          });
+
+          observer.observe(document, {
+            childList: true,
+            subtree: true
+          });
+        }
+      </script>
   </head>
-  <body>
+  <body onload = 'firstLoadKaTeX()'>
     <div id="root"></div>
   </body>
 </html>
