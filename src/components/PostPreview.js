@@ -10,12 +10,16 @@ const PostPreview = (props_) => {
     leave: { zIndex: -1, opacity: 0, transform: "translateX(-30vw)" }
   });
 
+  function handleClick () {
+    postToggle((postOpen => !postOpen));
+  }
+
   return (
     <div>
       <li
-        className="postPreview"
+        className= {postOpen ? "postPreview postOpen" : "postPreview"}
         id={props_.date}
-        onClick={() => postToggle((postOpen) => !postOpen)}
+        onClick={handleClick}
       >
         <table className="postHead">
           <tr>
@@ -38,8 +42,9 @@ const PostPreview = (props_) => {
         postTransition.map(
           ({ item, key, props }) =>
             item && (
-              <animated.div className="post" key={key} style={props}>
+                <animated.div className= "post" key={key} style={props}>
                 {props_.full}
+                <button class = "postEndButton hvr-overline-from-right" onClick = {handleClick}>Hide Post</button>
               </animated.div>
             )
         )

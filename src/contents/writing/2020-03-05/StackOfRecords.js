@@ -17,6 +17,7 @@ import svg8 from "./svg8.svg";
 import Fig1GP from "./fig1records.png";
 
 class StackOfRecords extends Component {
+    
   componentDidMount() {
     window.KaTeXRender();
   }
@@ -378,7 +379,7 @@ class StackOfRecords extends Component {
         </p>
         <p>
           One interesting remark is that {"\\(dN_{-1}\\)"} is also surjective.
-          In fact, this holds true for any \(z \le 0\), despite the fact that we
+          In fact, this holds true for any \(z \lt 0\), despite the fact that we
           cannot have a negative radius. Although strange, it is merely
           platitudinous, as {"\\(N^{-1}(-1)=\\varnothing\\)"} and the empty set
           is vacuously a \(0\)-manifold (and also a basis for every kernel, and
@@ -424,6 +425,7 @@ class StackOfRecords extends Component {
       </div>
     );
   }
+
 }
 
 export default StackOfRecords;
