@@ -8,7 +8,7 @@ import {
   RiLinkedinBoxFill
 } from "react-icons/ri";
 /* contact photo */
-import pfp from "../media/camel.jpg";
+import pfp from "../media/tottori.jpg";
 /* info from css */
 var accentColour = "#4c2a6e";
 var vh = window.innerHeight / 100;

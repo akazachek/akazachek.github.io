@@ -3,7 +3,6 @@ import pfp from "../media/me.jpg";
 import cv from "../media/cv.pdf";
 
 class About extends Component {
-
   state = {
     pfpAlt: "Headshot",
     cvDate: "2021-01-13"
@@ -42,12 +41,13 @@ class About extends Component {
           <p>
             A non-mathematical topic I find interesting is linguistics. I'm
             fascinated with the different approaches languages take to
-            communicate the same ideas, and their unique perspectives. One of my
-            favourite examples is describing colour: Japanaese doesn't
-            distinguish between <i>green</i> and <i>blue</i> like English, and
-            instead treats both as 青い, whereas Russian further separates{" "}
-            <i>blue</i> and <i>light blue</i> as <i>синий</i> and <i>голубой</i>
-            . Incidentally, I know (varying degrees of) those 3 languages.
+            communicate the same ideas, and the unique perspective that
+            provides. One of my favourite examples is describing colour:
+            Japanaese doesn't distinguish between <i>green</i> and <i>blue</i>{" "}
+            like English, and instead treats both as 青い, whereas Russian
+            further separates <i>blue</i> and <i>light blue</i> as <i>синий</i>{" "}
+            and <i>голубой</i>. Incidentally, I know (varying degrees of) those
+            3 languages.
           </p>
           <p>
             Programming is also something I have picked up, both in school and
