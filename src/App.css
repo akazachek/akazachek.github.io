@@ -279,7 +279,7 @@ nav ul li a:visited {
   right: 0;
   top: 0;
   background: var(--accent-colour-dark);
-  height: 4px;
+  height: 7px;
   -webkit-transition-property: left;
   transition-property: left;
   -webkit-transition-duration: 0.3s;
