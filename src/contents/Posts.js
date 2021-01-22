@@ -51,7 +51,7 @@ class Posts extends Component {
             date="2019-12-22"
             dummyID="5"
             name="Non-normal Spaces: the Moore Plane and Continuous Functions"
-            summary='Topological normality, the ability to find space between distinct closed sets, seems like it should always be present (hence the name). However, this is not the case; the Moore plane is an easy to visualize counter-example. A theorem due to Jones which relies on different sizes of infinity is used to show that the Moore plane is, informally speaking, simply too "tightly packed" to be normal.'
+            summary='Topological normality, the ability to find space between distinct closed sets, seems like it should always be present (hence the name). However, this is not the case; the Moore plane is an easy-to-visualize counter-example. A theorem due to Jones which relies on different sizes of infinity is used to show that the Moore plane is, informally speaking, simply too "tightly packed" to be normal.'
             full={<Normal />}
           />
           <PostPreview

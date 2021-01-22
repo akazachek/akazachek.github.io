@@ -5,7 +5,7 @@ import cv from "../media/cv.pdf";
 class About extends Component {
   state = {
     pfpAlt: "Headshot",
-    cvDate: "2021-01-13"
+    cvDate: "2021-01-22"
   };
 
   render() {
