@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/akazachek.github.io/static/css/main.5685716a.chunk.css",
-    "main.js": "/akazachek.github.io/static/js/main.88f9664e.chunk.js",
-    "main.js.map": "/akazachek.github.io/static/js/main.88f9664e.chunk.js.map",
+    "main.js": "/akazachek.github.io/static/js/main.f3b194e6.chunk.js",
+    "main.js.map": "/akazachek.github.io/static/js/main.f3b194e6.chunk.js.map",
     "runtime-main.js": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js",
     "runtime-main.js.map": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js.map",
     "static/js/2.10f71e37.chunk.js": "/akazachek.github.io/static/js/2.10f71e37.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/akazachek.github.io/index.html",
     "static/css/main.5685716a.chunk.css.map": "/akazachek.github.io/static/css/main.5685716a.chunk.css.map",
     "static/js/2.10f71e37.chunk.js.LICENSE.txt": "/akazachek.github.io/static/js/2.10f71e37.chunk.js.LICENSE.txt",
-    "static/media/cv.0ec6bd6a.pdf": "/akazachek.github.io/static/media/cv.0ec6bd6a.pdf",
+    "static/media/cv.70a14179.pdf": "/akazachek.github.io/static/media/cv.70a14179.pdf",
     "static/media/fig1(koch).b55a4c6d.png": "/akazachek.github.io/static/media/fig1(koch).b55a4c6d.png",
     "static/media/fig1records.193c1ea7.png": "/akazachek.github.io/static/media/fig1records.193c1ea7.png",
     "static/media/fig2(transv).eaa3dc15.png": "/akazachek.github.io/static/media/fig2(transv).eaa3dc15.png",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.22d11cf8.js",
     "static/js/2.10f71e37.chunk.js",
     "static/css/main.5685716a.chunk.css",
-    "static/js/main.88f9664e.chunk.js"
+    "static/js/main.f3b194e6.chunk.js"
   ]
 }
