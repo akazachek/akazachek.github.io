@@ -43,7 +43,7 @@ class About extends Component {
             fascinated with the different approaches languages take to
             communicate the same ideas, and the unique perspective that
             provides. One of my favourite examples is describing colour:
-            Japanaese doesn't distinguish between <i>green</i> and <i>blue</i>{" "}
+            Japanese doesn't distinguish between <i>green</i> and <i>blue</i>{" "}
             like English, and instead treats both as 青い, whereas Russian
             further separates <i>blue</i> and <i>light blue</i> as <i>синий</i>{" "}
             and <i>голубой</i>. Incidentally, I know (varying degrees of) those
