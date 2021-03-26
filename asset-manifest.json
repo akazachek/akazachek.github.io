@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/akazachek.github.io/static/css/main.5685716a.chunk.css",
-    "main.js": "/akazachek.github.io/static/js/main.f3b194e6.chunk.js",
-    "main.js.map": "/akazachek.github.io/static/js/main.f3b194e6.chunk.js.map",
+    "main.js": "/akazachek.github.io/static/js/main.cab2fd81.chunk.js",
+    "main.js.map": "/akazachek.github.io/static/js/main.cab2fd81.chunk.js.map",
     "runtime-main.js": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js",
     "runtime-main.js.map": "/akazachek.github.io/static/js/runtime-main.22d11cf8.js.map",
     "static/js/2.10f71e37.chunk.js": "/akazachek.github.io/static/js/2.10f71e37.chunk.js",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.22d11cf8.js",
     "static/js/2.10f71e37.chunk.js",
     "static/css/main.5685716a.chunk.css",
-    "static/js/main.f3b194e6.chunk.js"
+    "static/js/main.cab2fd81.chunk.js"
   ]
 }
