@@ -9,6 +9,7 @@ class NavItem extends Component {
       classes: "hvr-sweep-to-right"
     };
   }
+  
 
   componentDidMount() {
     if (this.props.item == "Who Am I?") {
