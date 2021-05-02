@@ -4,7 +4,7 @@ class HeisigKanji extends Component {
 
   render() {
     return (
-      <div class="postContent">
+      <div class="postContent leftMargin">
         <p>
           <i>
             As a preface to everything I say below: I am no expert in Japanese.
@@ -279,9 +279,9 @@ class HeisigKanji extends Component {
           response to the words, whereas verbal tricks have no basis), however
           if the words prompt nothing, it's better than brute-force. The most
           helpful backup, however, was{" "}
-          <a href="https://kanji.koohii.com/">Kanji Koohii</a> (however I used
+          <a className="linkPurple" href="https://kanji.koohii.com/">Kanji Koohii</a> (however I used
           it indirectly through{" "}
-          <a href="https://hochanh.github.io/rtk/">rtk-search</a>). Although
+          <a className="linkPurple" href="https://hochanh.github.io/rtk/">rtk-search</a>). Although
           those stories weren't my personal stories, they were stories
           nonetheless, and oftentimes I didn't need to rip a full one from a
           user, but just read some to get inspired.
@@ -362,7 +362,7 @@ class HeisigKanji extends Component {
         <p>
           The kanji「璽」brings up an important critique of Heisig's RTK too. An
           analysis of around 800 million kanji uses,{" "}
-          <a href="http://scriptin.github.io/kanji-frequency/">
+          <a className="linkPurple" href="http://scriptin.github.io/kanji-frequency/">
             available here
           </a>
           , lists it as the 2938th most used character in the best case,

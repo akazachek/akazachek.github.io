@@ -44,7 +44,7 @@ const PostPreview = (props_) => {
             item && (
                 <animated.div className= "post" key={key} style={props}>
                 {props_.full}
-                <button class = "postEndButton hvr-overline-from-right" onClick = {handleClick}>Hide Post</button>
+                <button className = "postEndButton hvr-overline-from-right leftMargin" onClick = {handleClick}>Hide Post</button>
               </animated.div>
             )
         )

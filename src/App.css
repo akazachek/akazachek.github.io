@@ -11,17 +11,22 @@ button {
 }
 
 :root {
-  --sidebar-flex: 1.5;
-  --coDiv-flex: 6;
-  --fontsize-contactHead: 2.5vw;
-  --fontsize-contactHandle: 2vw;
-  --fontsize-nav: 3vw;
+  --fontsize-contactHead: 5vh;
+  --fontsize-contactHandle: 3vh;
+  --fontsize-nav: 4vh;
   --fontsize-norm: 1.2em;
   --active-colour: #d7dade;
   --active-colour-dark: #5b5c5b;
   --accent-colour: #9e42f5;
   --accent-colour-dark: #4c2a6e;
   --light-color: #f4f5f9;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --fontsize-nav: 3.5vh;
+    --fontsize-contactHead: 3vh;
+  }
 }
 
 /* tbh idk why this is here */
@@ -48,7 +53,7 @@ button {
   margin-left: 17vw;
 }
 
-/* nav bar */
+/* || NAV BAR */
 .navContainer {
   position: fixed;
   height: 100%;
@@ -56,9 +61,6 @@ button {
   top: 0;
   left: 0;
   background-color: #f4f5f9;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   z-index: 1000;
 }
 nav {
@@ -89,69 +91,65 @@ nav ul li a:visited {
   color: white;
 }
 /* hover effect courtesy of https://github.com/IanLunn/Hover */
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--active-colour);
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  border-right-style: solid;
-  border-color: var(--active-colour-dark);
-  border-width: 2vw;
-  box-sizing: border-box;
-  width: 20vw;
-}
-.hvr-sweep-to-right:hover:before,
-.hvr-sweep-to-right:focus:before,
-.hvr-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-.hvr-sweep-to-right:hover a,
-.hvr-sweep-to-right:focus a,
-.hvr-sweep-to-right:active a {
-  color: black;
+@media only screen and (min-width: 769px) {
+  .hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--active-colour);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-right-style: solid;
+    border-color: var(--active-colour-dark);
+    border-width: 2vw;
+    box-sizing: border-box;
+    width: 20vw;
+  }
+  .hvr-sweep-to-right:hover:before,
+  .hvr-sweep-to-right:focus:before,
+  .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .hvr-sweep-to-right:hover a,
+  .hvr-sweep-to-right:focus a,
+  .hvr-sweep-to-right:active a {
+    color: black;
+  }
 }
 
-
-/* about page and general text classes */
+/* || ABOUT */
 .about {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  width: 70%;
-  margin-left: 15%;
 }
 .pfp {
   border-radius: 50%;
-  width: 40%;
-  height: auto;
+  width: auto;
+  height: 30vh;
 }
 .about p,
 .postContent p,
@@ -164,34 +162,17 @@ nav ul li a:visited {
 .postContent ol li {
   text-indent: 0px;
 }
-.about p a,
-.about h3 a,
-.postContent p a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--accent-colour);
-}
-.about p a:visited,
-.about h3 a,
 .postContent p a:visited {
-  text-decoration: none;
   color: var(--accent-colour);
 }
-.cvLink {
-  font-weight: bolder;
-  text-decoration: none;
-  color: var(--accent-colour);
-}
-.cvLink:visited {
-  color: var(--accent-colour);
-}
+
 .cv {
   width: 100%;
   text-align: center;
   font-size: var(--fontsize-contactHandle);
 }
 
-/* post page */
+/* || POSTS */
 .posts {
   width: 100%;
   display: inline-block;
@@ -216,7 +197,7 @@ nav ul li a:visited {
   border: 5px solid var(--accent-colour);
 }
 
-/* post previews */
+/* || POST PREVIEWS */
 .postPreview:hover,
 .postOpen {
   border: 4px solid var(--accent-colour-dark);
@@ -241,20 +222,14 @@ nav ul li a:visited {
   padding: 2vh;
 }
 
-/* writing */
+/* || WRITING */
 .post {
   padding-top: 2vh;
   transition-duration: 0.4s;
   padding-bottom: 1vh;
 }
-.postContent {
-  width: 80%;
-  margin-left: 10%;
-}
 .postEndButton {
-  width: 80%;
   height: auto;
-  margin-left: 10%;
   margin-bottom: 2vh;
   padding: 1vh;
   font-size: var(--fontsize-norm);
@@ -287,11 +262,13 @@ nav ul li a:visited {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-overline-from-right:hover:before, .hvr-overline-from-right:focus:before, .hvr-overline-from-right:active:before {
+.hvr-overline-from-right:hover:before,
+.hvr-overline-from-right:focus:before,
+.hvr-overline-from-right:active:before {
   left: 0;
 }
 
-/* environments */
+/* || ENVIRONMENTS */
 .figureContainer {
   margin-top: 1vh;
   margin-bottom: 2vh;
@@ -299,11 +276,6 @@ nav ul li a:visited {
 }
 .figure {
   height: 30vh;
-  width: 70%;
-  margin-left: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .figure img {
   object-fit: contain;
@@ -322,7 +294,7 @@ nav ul li a:visited {
   text-align: left;
 }
 
-/* contact page */
+/* || CONTACT */
 .contactHead {
   width: 100%;
   border-collapse: collapse;
@@ -343,6 +315,7 @@ nav ul li a:visited {
   border-radius: 20%;
   width: 55vh;
   height: auto;
+  margin-left: 1vw;
 }
 .contactInfo {
   width: 100%;
@@ -358,4 +331,128 @@ nav ul li a:visited {
 }
 .handle a:visited {
   color: inherit;
+}
+
+/* || GENERAL */
+
+.leftMargin {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.leftMarginWide {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.centredBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkBlack,
+.linkPurple {
+  text-decoration: none;
+}
+
+.linkBlack {
+  color: black;
+}
+
+.linkPurple {
+  color: var(--accent-colour);
+  font-weight: bold;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+  .navContainer {
+    position: fixed;
+    height: 15vh;
+    width: 100vw;
+    top: 0;
+    background-color: #f4f5f9;
+    z-index: 1000;
+  }
+
+  .navActive {
+    border-right-style: none;
+    border-bottom-style: solid;
+  }
+
+  .navContainer nav {
+    width: 100%;
+  }
+  .navContainer ul li {
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    float: left;
+    display: inline-flex;
+    width: 33%;
+  }
+
+  .navContainer ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    height: 90%;
+    width: 90%;
+    line-height: 100%;
+  }
+
+  .coDiv {
+    padding: 0px;
+    width: 94vw;
+    flex: var(--coDiv-flex);
+    margin-top: 15vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .leftMargin,
+  .leftMarginWide {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .pfp {
+    border-radius: 50%;
+    width: auto;
+    height: 20vh;
+  }
+
+  .posts ul {
+    margin-top: 2vh;
+  }
+
+  .posts ul li {
+    width: 95%;
+  }
+
+  .contactPhoto img {
+    border-radius: 20%;
+    width: auto;
+    height: 25vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .contactMessage {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .handle {
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .cv {
+    text-align: left;
+  }
 }

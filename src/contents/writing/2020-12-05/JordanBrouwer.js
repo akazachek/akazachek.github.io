@@ -17,7 +17,7 @@ class JordanBrouwer extends Component {
 
   render() {
     return (
-      <div class="postContent">
+      <div class="postContent leftMargin">
         <p>
           If I were to draw a circle or some polygon, like a square, on a piece
           of paper, and ask you to identify the inside and outside, you would

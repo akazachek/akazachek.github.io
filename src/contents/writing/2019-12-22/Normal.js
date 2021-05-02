@@ -11,7 +11,7 @@ class Normal extends Component {
 
   render() {
     return (
-      <div class="postContent">
+      <div class="postContent leftMargin">
         <p>
           A few weeks ago I was working through some exercises out of Rudin's{" "}
           <i>Principles of Mathematical Analysis</i> and exercise 4.22 brought

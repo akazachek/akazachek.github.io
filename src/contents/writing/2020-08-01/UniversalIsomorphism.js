@@ -18,7 +18,7 @@ class UniversalIsomorphism extends Component {
 
   render() {
     return (
-      <div class="postContent">
+      <div class="postContent leftMargin">
         <p>
           While reading Aluffi's <i>Algebra: Chapter 0</i> and finishing the
           proofs for the isomorphism theorems for modules, I began to grow

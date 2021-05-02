@@ -10,7 +10,7 @@ class LogIso extends Component {
 
   render() {
     return (
-      <div class="postContent">
+      <div className="postContent leftMargin">
         <p>
           Logarithms are pretty simple functions first introduced in early high
           school as the answer to the question "What is the opposite of

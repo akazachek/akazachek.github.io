@@ -24,7 +24,7 @@ class StackOfRecords extends Component {
 
   render() {
     return (
-      <div class="postContent">
+      <div class="postContent leftMargin">
         <p>
           Although Eratosthenes calculated the Earth's circumference around 250
           B.C.E with a very small margin of error, it is hard to see the Earth

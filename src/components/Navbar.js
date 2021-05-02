@@ -25,7 +25,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div class="navContainer">
+      <div class="navContainer centredBox">
         <nav>
           <ul>
             <NavItem

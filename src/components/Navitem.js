@@ -2,17 +2,15 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class NavItem extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       classes: "hvr-sweep-to-right"
     };
   }
-  
 
   componentDidMount() {
-    if (this.props.item == "Who Am I?") {
+    if (this.props.item === "Who Am I?") {
       this.setState({ classes: "hvr-sweep-to-right navActive" });
     }
   }
@@ -29,7 +27,6 @@ class NavItem extends Component {
       </li>
     );
   }
-
 }
 
 export default NavItem;
