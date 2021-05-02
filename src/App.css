@@ -177,12 +177,12 @@ nav ul li a:visited {
   text-decoration: none;
   color: var(--accent-colour);
 }
-#cvLink {
+.cvLink {
   font-weight: bolder;
   text-decoration: none;
   color: var(--accent-colour);
 }
-#cvLink:visited {
+.cvLink:visited {
   color: var(--accent-colour);
 }
 .cv {

@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import pfp from "../media/me.jpg";
 import cv from "../media/cv.pdf";
+import shortcv from "../media/shortcv.pdf";
 
 class About extends Component {
   state = {
     pfpAlt: "Headshot",
-    cvDate: "2021-01-22"
+    cvDate: "2021-05-02"
   };
 
   render() {
@@ -17,59 +18,65 @@ class About extends Component {
           <h1> Hey, I'm Alex! </h1>
           <h3 style={{ paddingTop: "1vh" }}>
             {" "}
-            I'm a second year undergraduate at{" "}
-            <a href="https://www.uwo.ca/">UWO</a> studying mathematics and data
+            I just finished the second year of my undergraduate at{" "}
+            <a href="https://www.uwo.ca/">UWO</a> in mathematics and data
             science.
           </h3>
           <br></br>
           <p>
-            Some things I've been involved with are organizing the{" "}
-            <a href="http://cumc.math.ca/2020">2020 CUMC</a>, a mathematics
-            conference which brought in over 100 students across North America.
-            A large part of my role was setting up the industry panel,
-            consisting of a few former mathematics students now working in
-            finance and software.
+            I enjoy anything mathematical. Broadly, I'm most interested in
+            geometric and analytical subjects, and my favourite coursework has
+            been in complex analysis and statistics. This summer, I'm doing an
+            undergraduate research project under{" "}
+            <a href="https://www.math.uwo.ca/faculty/barron/barron.html">
+              Dr. Tatyana Barron
+            </a>{" "}
+            through an NSERC USRA.
           </p>
           <p>
-            I'm also an executive for{" "}
-            <a href="https://www.uwo.ca/math/macaw/index.html">MaCAW</a>. A few
-            of the contributions I've made are starting biweekly mathematics
-            contests (with prizes!), and student seminars, so everyone has a
-            chance to share some of the things they've worked on throughout the
-            year.
+            I'm also involved with the mathematics community in other ways.
+            Currently, I'm a committee member for the upcoming{" "}
+            <a href="https://cumc.math.ca/2021/">2021 CUMC</a>, Canada's largest
+            mathematics conference for undergraduates. My biggest role is
+            designing and maintaining the new website. During the school year, I
+            have an executive role on{" "}
+            <a href="https://www.uwo.ca/math/undergraduate/current_students/macaw/index.html">MaCAW</a>, the
+            official club of Western's mathematics department. I help write and
+            grade our biweekly contests, and organize our once-a-semester
+            student seminars.
           </p>
           <p>
-            A non-mathematical topic I find interesting is linguistics. I'm
-            fascinated with the different approaches languages take to
-            communicate the same ideas, and the unique perspective that
-            provides. One of my favourite examples is describing colour:
-            Japanese doesn't distinguish between <i>green</i> and <i>blue</i>{" "}
-            like English, and instead treats both as 青い, whereas Russian
-            further separates <i>blue</i> and <i>light blue</i> as <i>синий</i>{" "}
-            and <i>голубой</i>. Incidentally, I know (varying degrees of) those
-            3 languages.
+            Outside of mathematics, I have an interest in linguistics. I'm always
+            intrigued by how different languages communicate the same
+            ideas. One of my favourite examples is describing colour: Japanese
+            doesn't distinguish between <i>green</i> and <i>blue</i> like
+            English, and instead treats both as 青い, whereas Russian further
+            separates <i>blue</i> and <i>light blue</i> as <i>синий</i> and{" "}
+            <i>голубой</i>. Incidentally, I know (varying degrees of) those 3
+            languages.
           </p>
           <p>
-            Programming is also something I have picked up, both in school and
-            on my own. My strongest languages are Python and Java, and I know a
-            few others. This website is primarily written using React.js;
-            mathematics is powered by \(\KaTeX\).
+            I also enjoy designing things. I find front-end web development fun
+            for that reason; this website is written in React.js. Similarly, I
+            like tinkering with \(\LaTeX\), despite its constantly overfull
+            hboxes.
           </p>
           <p>
-            In my free time I enjoy speedrunning (my favourite speedgames are
-            Mirror's Edge and Fallout 4). I'm also interested in finance,
-            working on the trading podcast Nikkei Bets with my friend.
-            Typography is also somewhat of a passion of mine, and I spend
-            perhaps a little bit too much time working on the small details in
-            all my \(\LaTeX\) templates.
+            Feel free to read my blog posts or get in touch with me on my
+            socials, both of which are to the left. I hope you enjoy your stay.
+            Food and and drink is not provided.
           </p>
           <p class="cv">
             {" "}
-            My full CV is available{" "}
-            <a id="cvLink" href={cv}>
+            My resume is available{" "}
+            <a class="cvLink" href={shortcv}>
               here
             </a>{" "}
-            and was last updated {this.state.cvDate}.
+            and full CV{" "} 
+            <a class="cvLink" href={cv}>
+              here
+            </a>
+            . Last updated {this.state.cvDate}.
           </p>
         </div>
       </div>
