@@ -1,12 +1,11 @@
 import React from "react";
 import MobileDetector from "../components/MobileDetector";
 import pfp from "../media/me.jpg";
-import cv from "../media/cv.pdf";
 import shortcv from "../media/shortcv.pdf";
 
 function About() {
   const pfpAlt = "Headshot";
-  const cvDate = "2021-05-02";
+  const cvDate = "2021-06-21";
   const str = MobileDetector() ? "above" : "to the left";
 
   return (
@@ -35,7 +34,9 @@ function About() {
           >
             Dr. Tatyana Barron
           </a>{" "}
-          through an NSERC USRA.
+          through an NSERC USRA. The project is broadly in quantum information
+          theory, examining the geometry of density matrices and how it may be
+          related to various notions of entanglement.
         </p>
         <p>
           I'm also involved with the mathematics community in other ways.
@@ -80,10 +81,6 @@ function About() {
           {" "}
           My resume is available{" "}
           <a className="linkPurple" href={shortcv}>
-            here
-          </a>{" "}
-          and full CV{" "}
-          <a className="linkPurple" href={cv}>
             here
           </a>
           . Last updated {cvDate}.
