@@ -266,8 +266,10 @@ class Entanglement extends Component {
           <strong>separable</strong> (or <strong>disentangled</strong>). If a
           state is not separable, it is <strong>entangled</strong>. Note that
           the case where the {"\\(\\sigma_i,\\tau_i\\)"} are instead mixed
-          actually describes the same set, so purity is assumed without loss of
-          generality.
+          actually describes the same set (the proof for this hinges on
+          Carathéodory's result for convex hulls and the compactness of pure
+          states in the component Hilbert spaces), so purity is assumed without
+          loss of generality.
         </p>
         <p>
           Now, how do we determine if a state is entangled or separable?
