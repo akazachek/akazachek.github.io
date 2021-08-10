@@ -53,9 +53,10 @@ class Entanglement extends Component {
             "\\[T\\left(\\sum_i \\alpha_i e_i,\\sum_i\\beta_i f_i\\right)=\\sum_{i,j}\\alpha_i\\beta_j T(e_i,f_j).\\]"
           }
           In order to accomplish this, we define the formal symbol{" "}
-          {"\\(e_i\\otimes f_j\\coloneqq T(e_i,f_j)\\)"}; this is our tensor,
-          and the vector space {"\\(W\\eqqcolon U\\otimes V\\)"} is composed of
-          linear combinations of these symbols. This construction is actually
+          {"\\(e_i\\otimes f_j\\eqqcolon T(e_i,f_j)\\)"} (with {"\\(T\\)"}{" "}
+          extended to non-basis vectors bilinearly); this is our tensor, and the
+          vector space {"\\(W\\eqqcolon U\\otimes V\\)"} is composed of linear
+          combinations of these symbols. This construction is actually
           universal, in the sense that given any other bilinear construction on{" "}
           {"\\(U\\times V\\)"}, we can uniquely describe it in terms of this{" "}
           {"\\(U\\otimes V\\)"}.
@@ -74,9 +75,9 @@ class Entanglement extends Component {
           {"\\(t\\in U\\otimes V\\)"}, we cannot necessarily write{" "}
           {"\\(t=u\\otimes v\\)"} for some {"\\(u\\in U,v\\in V\\)"}. Vectors
           for which this is possible are called <strong>decomposable</strong>.
-          Two other facts are that if {"\\(\\{e_i\\},\\{f_i\\}\\)"} are
-          orthonormal bases for {"\\(U,V\\)"}, then{" "}
-          {"\\(\\{e_i\\otimes f_j\\}\\)"} will be an orthonormal basis for{" "}
+          Two other facts for finite-dimensional {"\\(U,V\\)"} are that if{" "}
+          {"\\(\\{e_i\\},\\{f_i\\}\\)"} are orthonormal bases for {"\\(U,V\\)"},
+          then {"\\(\\{e_i\\otimes f_j\\}\\)"} will be an orthonormal basis for{" "}
           {"\\(U\\otimes V\\)"}. Of course, orthonormality implies an inner
           product, and indeed one exists, given by
           {
@@ -117,7 +118,9 @@ class Entanglement extends Component {
           {"\\(\\langle\\cdot,\\cdot\\rangle\\)"} induces a norm{" "}
           {"\\(\\|\\cdot\\|\\)"} by{" "}
           {"\\(\\|v\\|=\\sqrt{\\langle v,v\\rangle}\\)"}. If the associated
-          metric space is complete, {"\\(V\\)"} is a{" "}
+          metric space is complete and {"\\(F=\\mathbb{R}\\)"} or{" "}
+          {"\\(F=\\mathbb{C}\\)"} (if the choice does not matter, we will write{" "}
+          {"\\(\\mathbb{F}\\)"}), then {"\\(V\\)"} is a{" "}
           <strong>Hilbert space</strong>. This definition comes from functional
           analysis, however, and so is slightly overkill for us, as we will only
           look at finite-dimensional spaces (where we always have completion).
@@ -206,7 +209,7 @@ class Entanglement extends Component {
         <Theorem
           no="2"
           statement="
-               Every self-adjoint linear operator over a finite-dimensional complex vector space has a diagonal matrix of its eigenvalues with respect to its orthonormal set of eigenvectors."
+               Every self-adjoint linear operator over a finite-dimensional complex inner product space has a diagonal matrix of its eigenvalues with respect to its orthonormal set of eigenvectors."
         />
         <p>
           This means given any state, say {"\\(\\rho\\)"}, we may take its
@@ -320,10 +323,10 @@ class Entanglement extends Component {
           {
             "\\[E(v)=-\\sum_{\\lambda_i \\in\\,\\operatorname{spec}\\operatorname{tr}_2 P_v}\\lambda_i\\ln\\lambda_i\\]"
           }
-          with the convention {"\\(\\ln 0=0\\)"}. There exists a nicer, more
-          explicit formula, which also shows it does not matter which partial
-          trace we use in the definition (i.e. {"\\(\\operatorname{tr}_1\\)"}{" "}
-          versus {"\\(\\operatorname{tr}_2\\)"}).
+          with the convention {"\\(0\\cdot\\ln 0=0\\)"}. There exists a nicer,
+          more explicit formula, which also shows it does not matter which
+          partial trace we use in the definition (i.e.{" "}
+          {"\\(\\operatorname{tr}_1\\)"} versus {"\\(\\operatorname{tr}_2\\)"}).
         </p>
         <Theorem
           no="4"
@@ -344,7 +347,7 @@ class Entanglement extends Component {
         />
         <Proof
           proof="
-                Recall that the matrix representing the projector \(P_v\) is given by \(vv^\ast\), where \(v^\ast\) is the conjugate transpose of the column vector of \(v\). Written with respect to the Schmidt decomposition, we have
+                Recall that the projector \(P_v\) is given by \(vv^\ast\), where \(v^\ast\) is the conjugate transpose of the column vector of \(v\), or defined by the linear functional \(u\mapsto \langle u,v\rangle\). Written with respect to the Schmidt decomposition, we have
                 \[
                   vv^\ast=\left(\sum_i \alpha_i e_i\otimes f_i\right)\left(\sum_i \alpha_i e_i\otimes f_i\right)^\ast=\sum_{i,j} \alpha_i\overline{\alpha_j} (e_i\otimes f_i)(e_j\otimes f_j)^\ast.
                 \]
@@ -448,11 +451,11 @@ class Entanglement extends Component {
           singular), so some care must be taken. It may be easier to understand
           this as notational shorthand applied to the eigendecomposition, where
           {`\\[\\rho\\ln\\rho=\\sum_i (\\lambda_i\\ln\\lambda_i) P_{v_i}\\]`}{" "}
-          with {"\\(\\ln 0=0\\)"} as before. When the matrix {"\\(\\ln\\rho\\)"}{" "}
-          exists, the two definitions coincide. This quantity is closely related
-          to entanglement entropy (indeed, entanglement entropy is sometimes
-          called the reduced von Neumann entropy, as{" "}
-          {"\\(E(v)=S(\\operatorname{tr}_2 P_v)\\)"}).
+          with {"\\(0\\cdot\\ln 0=0\\)"} as before. When the matrix{" "}
+          {"\\(\\ln\\rho\\)"} exists, the two definitions coincide. This
+          quantity is closely related to entanglement entropy (indeed,
+          entanglement entropy is sometimes called the reduced von Neumann
+          entropy, as {"\\(E(v)=S(\\operatorname{tr}_2 P_v)\\)"}).
         </p>
         <p>
           With this, we may now define the <strong>relative entropy</strong> of{" "}
