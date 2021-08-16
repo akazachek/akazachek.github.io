@@ -27,7 +27,7 @@ class Posts extends Component {
             summary="<p>
             The spectral theorem may be viewed as nothing more than a technical set of conditions for when a matrix may be diagonalized. However, there is a geometric notion underpinning this statement, made visible here by elevating the theorem to one for linear operators with diagonalization interpreted through vector projections.</p>
             <p style='padding-top: 1vh;'>
-            This video was made for the <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://www.3blue1brown.com/blog/some1'>2021 Summer of Math Exposition</a> in collaboration <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://www.jacquelinedoan.com/home'>Jackie Doan</a>.
+            This video was made for the <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://www.3blue1brown.com/blog/some1'>2021 Summer of Math Exposition</a> in collaboration with <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://www.jacquelinedoan.com/home'>Jackie Doan</a>.
             </p>"
             full={<SOME1 />}
             html={true}
