@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PostPreview from "../components/PostPreview";
 
 /* posts */
+import SOME1 from "./writing/2021-08-16/SOME1";
 import Entanglement from "./writing/2021-07-25/Entanglement";
 import JordanBrouwer from "./writing/2020-12-05/JordanBrouwer";
 import HeisigKanji from "./writing/2020-08-09/HeisigKanji";
@@ -19,6 +20,18 @@ class Posts extends Component {
     return (
       <div id="KaTeXSec" className="coDiv posts">
         <ul>
+          <PostPreview
+            date="2021-08-16"
+            dummyID="8"
+            name="Spectral Theorem For Dummies"
+            summary="<p>
+            The spectral theorem may be viewed as nothing more than a technical set of conditions for when a matrix may be diagonalized. However, there is a geometric notion underpinning this statement, made visible here by elevating the theorem to one for linear operators with diagonalization interpreted through vector projections.</p>
+            <p style='padding-top: 1vh;'>
+            This video was made for the <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://www.3blue1brown.com/blog/some1'>2021 Summer of Math Exposition</a> in collaboration <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://www.jacquelinedoan.com/home'>Jackie Doan</a>.
+            </p>"
+            full={<SOME1 />}
+            html={true}
+          ></PostPreview>
           <PostPreview
             date="2021-08-03"
             dummyID="7"
