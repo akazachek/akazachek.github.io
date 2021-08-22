@@ -24,8 +24,10 @@ class Posts extends Component {
             date="2021-08-21"
             dummyID="8"
             name="But What Is Entanglement Really?"
-            summary="Quantum entanglement, morally, has an intuitive definition: that some system cannot be understood as a combination of individual components, only holistically as an inseparable whole. Unsurprisingly, the precise mathematical definition herein is slightly more involved, introduced through the tensor product of Hilbert spaces. Some ways of measuring entanglement, specifically those related to entanglement entropy, are also surveyed."
+            summary="<p>Quantum entanglement, morally, has an intuitive definition: that some system cannot be understood as a combination of individual components, only holistically as an inseparable whole. Unsurprisingly, the precise mathematical definition herein is slightly more involved, introduced through the tensor product of Hilbert spaces. Some ways of measuring entanglement, specifically those related to entanglement entropy, are also surveyed.</p>
+            <p style='padding-top: 1vh;'>My talk at the <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://cumc2021.ca'>2021 CUMC</a> is an abridged version of this write-up; a recording is available within the post.</p>"
             full={<Entanglement />}
+            html={true}
           ></PostPreview>
           <PostPreview
             date="2021-08-16"
