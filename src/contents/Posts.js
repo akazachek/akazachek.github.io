@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import PostPreview from "../components/PostPreview";
 
 /* posts */
+import Entanglement from "./writing/2021-08-21/Entanglement";
 import SOME1 from "./writing/2021-08-16/SOME1";
-import Entanglement from "./writing/2021-07-25/Entanglement";
 import JordanBrouwer from "./writing/2020-12-05/JordanBrouwer";
 import HeisigKanji from "./writing/2020-08-09/HeisigKanji";
 import UniversalIsomorphism from "./writing/2020-08-01/UniversalIsomorphism";
@@ -21,8 +21,15 @@ class Posts extends Component {
       <div id="KaTeXSec" className="coDiv posts">
         <ul>
           <PostPreview
-            date="2021-08-16"
+            date="2021-08-21"
             dummyID="8"
+            name="But What Is Entanglement Really?"
+            summary="Quantum entanglement, morally, has an intuitive definition: that some system cannot be understood as a combination of individual components, only holistically as an inseparable whole. Unsurprisingly, the precise mathematical definition herein is slightly more involved, introduced through the tensor product of Hilbert spaces. Some ways of measuring entanglement, specifically those related to entanglement entropy, are also surveyed."
+            full={<Entanglement />}
+          ></PostPreview>
+          <PostPreview
+            date="2021-08-16"
+            dummyID="7"
             name="Spectral Theorem For Dummies"
             summary="<p>
             The spectral theorem may be viewed as nothing more than a technical set of conditions for when a matrix may be diagonalized. However, there is a geometric notion underpinning this statement, made visible here by elevating the theorem to one for linear operators with diagonalization interpreted through vector projections.</p>
@@ -31,13 +38,6 @@ class Posts extends Component {
             </p>"
             full={<SOME1 />}
             html={true}
-          ></PostPreview>
-          <PostPreview
-            date="2021-08-03"
-            dummyID="7"
-            name="But What Is Entanglement Really?"
-            summary="Quantum entanglement, morally, has an intuitive definition: that some system cannot be understood as a combination of individual components, only holistically as an inseparable whole. Unsurprisingly, the precise mathematical definition herein is slightly more involved, introduced through the tensor product of Hilbert spaces. Some ways of measuring entanglement, specifically those related to entanglement entropy, are also surveyed."
-            full={<Entanglement />}
           ></PostPreview>
           <PostPreview
             date="2020-12-05"

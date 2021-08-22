@@ -13,6 +13,24 @@ class Entanglement extends Component {
     return (
       <div class="postContent leftMargin">
         <p>
+          <strong>Update (2021-08-21):</strong> I presented an abridged version
+          of this write-up as a student talk at the{" "}
+          <a className="linkPurple" href="https://cumc2021.ca">
+            2021 Canadian Undergraduate Mathematics Conference
+          </a>
+          . Below is a recording of this talk.
+        </p>
+        <p style={{ textAlign: "center" }}>
+          <iframe
+            src="https://www.youtube.com/watch?v=K2HlbbaDlyE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style={{ height: "50vh", width: "80%" }}
+          ></iframe>
+        </p>
+        <p>
           In middle school I wanted to be a physicist. The motivating factor was
           quantum mechanics, or at least my pop science understanding of it.
           Entangled particles! Quantum tunneling! Superpositions! Of course, I
