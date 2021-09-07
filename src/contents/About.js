@@ -5,7 +5,7 @@ import shortcv from "../media/shortcv.pdf";
 
 function About() {
   const pfpAlt = "Headshot";
-  const cvDate = "2021-06-21";
+  const cvDate = "2021-09-06";
   const str = MobileDetector() ? "above" : "to the left";
 
   return (
@@ -16,7 +16,7 @@ function About() {
         <h1> Hey, I'm Alex! </h1>
         <h3 style={{ paddingTop: "1vh" }}>
           {" "}
-          I just finished the second year of my undergraduate at{" "}
+          I'm a third year undergraduate at{" "}
           <a className="linkPurple" href="https://www.uwo.ca/">
             UWO
           </a>{" "}
@@ -24,53 +24,50 @@ function About() {
         </h3>
         <br></br>
         <p>
-          I enjoy anything mathematical. Broadly, I'm most interested in
-          geometric and analytical subjects, and my favourite coursework has
-          been in complex analysis and statistics. This summer, I'm doing an
-          undergraduate research project under{" "}
+          This past summer I did research under{" "}
           <a
             className="linkPurple"
             href="https://www.math.uwo.ca/faculty/barron/barron.html"
           >
             Dr. Tatyana Barron
           </a>{" "}
-          through an NSERC USRA. The project is broadly in quantum information
-          theory, examining the geometry of density matrices and how it may be
-          related to various notions of entanglement.
-        </p>
-        <p>
-          I'm also involved with the mathematics community in other ways.
-          Currently, I'm a committee member for the upcoming{" "}
+          through an NSERC USRA, covering some aspects of quantum state geometry
+          and information theory. I was also one of the organizers for the{" "}
           <a className="linkPurple" href="https://cumc.math.ca/2021/">
-            2021 CUMC
+            2021 Canadian Undergraduate Mathematics Conference
           </a>
-          , Canada's largest mathematics conference for undergraduates. My
-          biggest role is designing and maintaining the new website. During the
-          school year, I have an executive role on{" "}
+          . My role was in creating the website, as well as organizing the
+          panels and workshops. I also presented an introduction to quantum
+          entanglement, which you can watch{" "}
+          <a
+            className="linkPurple"
+            href="https://www.youtube.com/watch?v=K2HlbbaDlyE"
+          >
+            here
+          </a>
+          . Right now, I'm in charge of the academics for{" "}
           <a
             className="linkPurple"
             href="https://www.uwo.ca/math/undergraduate/current_students/macaw/index.html"
           >
             MaCAW
           </a>
-          , the official club of Western's mathematics department. I help write
-          and grade our biweekly contests, and organize our once-a-semester
-          student seminars.
+          , the official club of Western's mathematics department, putting on
+          events like student seminars.
         </p>
         <p>
-          Outside of mathematics, I have an interest in linguistics. I'm
-          intrigued by how different languages communicate the same ideas. One
-          of my favourite examples is describing colour: Japanese doesn't
-          distinguish between <i>green</i> and <i>blue</i> like English, and
-          instead treats both as 青い, whereas Russian further separates{" "}
-          <i>blue</i> and <i>light blue</i> as <i>синий</i> and <i>голубой</i>.
-          Incidentally, I know (varying degrees of) those 3 languages.
-        </p>
-        <p>
-          I also enjoy designing things. I find front-end web development fun
-          for that reason; this website is written in React.js. Similarly, I
-          like tinkering with \(\LaTeX\), despite its constantly overfull
-          hboxes.
+          Outside of academics, I like to go rock climbing and do calisthenics.
+          I'm also interested in fashion, with my Instagram being mostly outfit
+          shots. Being interested in linguistics in general, I like learning
+          languages, and know some Russian and Japanese. Convicing myself that
+          it's cardio, I also play a lot of Beat Saber (here is my{" "}
+          <a
+            className="linkPurple"
+            href="https://scoresaber.com/u/76561198089263800"
+          >
+            Score Saber
+          </a>{" "}
+          profile).
         </p>
         <p>
           Feel free to read my blog posts or get in touch with me on my socials,

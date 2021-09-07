@@ -424,6 +424,7 @@ nav ul li a:visited {
     border-radius: 50%;
     width: auto;
     height: 20vh;
+    margin-top: 2vh;
   }
 
   .posts ul {
