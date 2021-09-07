@@ -59,7 +59,7 @@ function About() {
           Outside of academics, I like to go rock climbing and do calisthenics.
           I'm also interested in fashion, with my Instagram being mostly outfit
           shots. Being interested in linguistics in general, I like learning
-          languages, and know some Russian and Japanese. Convicing myself that
+          languages, and know some Russian and Japanese. Convincing myself that
           it's cardio, I also play a lot of Beat Saber (here is my{" "}
           <a
             className="linkPurple"
@@ -76,7 +76,7 @@ function About() {
         </p>
         <p className="cv">
           {" "}
-          My resume is available{" "}
+          My résumé is available{" "}
           <a className="linkPurple" href={shortcv}>
             here
           </a>
