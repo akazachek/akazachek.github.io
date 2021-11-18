@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PostPreview from "../components/PostPreview";
 
 /* posts */
+import Sobolev from "./writing/2021-11-14/Sobolev";
 import Entanglement from "./writing/2021-08-21/Entanglement";
 import SOME1 from "./writing/2021-08-16/SOME1";
 import JordanBrouwer from "./writing/2020-12-05/JordanBrouwer";
@@ -20,6 +21,13 @@ class Posts extends Component {
     return (
       <div id="KaTeXSec" className="coDiv posts">
         <ul>
+          <PostPreview
+            date="2021-11-18"
+            dummyID="9"
+            name="How to Differentiate a Function With No Derivative"
+            summary="Differential equations are so hard to solve partially because the set of differentiable functions simply lacks many desirable properties. One way to remedy this is through weak derivatives, which are used to define the much more well-behaved Sobolev space. This definition will be naturally rediscovered herein by examining the Dirichlet problem, which will then be (weakly) solved by Stampacchia's theorem. Conditions for when this weak solution corresponds to a classical solution will also be provided."
+            full={<Sobolev />}
+          ></PostPreview>
           <PostPreview
             date="2021-08-21"
             dummyID="8"
