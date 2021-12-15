@@ -81,7 +81,7 @@ function About() {
           <a className="linkPurple" href={shortcv}>
             here
           </a>{" "}
-          and a full curriculum vitae
+          and a full curriculum vitae{" "}
           <a className="linkPurple" href={cv}>
             here
           </a>
