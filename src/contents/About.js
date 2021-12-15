@@ -1,11 +1,12 @@
 import React from "react";
 import MobileDetector from "../components/MobileDetector";
 import pfp from "../media/me.jpg";
-import shortcv from "../media/shortcv.pdf";
+import shortcv from "../media/resume.pdf";
+import cv from "../media/cv.pdf";
 
 function About() {
   const pfpAlt = "Headshot";
-  const cvDate = "2021-09-06";
+  const cvDate = "2021-12-15";
   const str = MobileDetector() ? "above" : "to the left";
 
   return (
@@ -78,6 +79,10 @@ function About() {
           {" "}
           My résumé is available{" "}
           <a className="linkPurple" href={shortcv}>
+            here
+          </a>
+          and a full curriculum vitae
+          <a className="linkPurple" href={cv}>
             here
           </a>
           . Last updated {cvDate}.
