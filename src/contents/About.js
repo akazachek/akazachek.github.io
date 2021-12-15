@@ -80,7 +80,7 @@ function About() {
           My résumé is available{" "}
           <a className="linkPurple" href={shortcv}>
             here
-          </a>
+          </a>{" "}
           and a full curriculum vitae
           <a className="linkPurple" href={cv}>
             here
