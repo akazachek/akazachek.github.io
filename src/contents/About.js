@@ -1,12 +1,11 @@
 import React from "react";
 import MobileDetector from "../components/MobileDetector";
 import pfp from "../media/me.jpg";
-import shortcv from "../media/resume.pdf";
-import cv from "../media/cv.pdf";
+import shortcv from "../media/shortcv.pdf";
 
 function About() {
   const pfpAlt = "Headshot";
-  const cvDate = "2021-12-15";
+  const cvDate = "2022-08-08";
   const str = MobileDetector() ? "above" : "to the left";
 
   return (
@@ -17,7 +16,7 @@ function About() {
         <h1> Hey, I'm Alex! </h1>
         <h3 style={{ paddingTop: "1vh" }}>
           {" "}
-          I'm a third year undergraduate at{" "}
+          I'm a fourth-year undergraduate at{" "}
           <a className="linkPurple" href="https://www.uwo.ca/">
             UWO
           </a>{" "}
@@ -25,54 +24,78 @@ function About() {
         </h3>
         <br></br>
         <p>
-          This past summer I did research under{" "}
+          Right now I'm working in mathematical physics with{" "}
           <a
             className="linkPurple"
             href="https://www.math.uwo.ca/faculty/barron/barron.html"
           >
-            Dr. Tatyana Barron
+            Tatyana Barron
+          </a>
+          , researching the entanglement of{" "}
+          <a
+            className="linkPurple"
+            href="https://en.wikipedia.org/wiki/Coherent_states_in_mathematical_physics"
+          >
+            coherent states
+          </a>
+          . These are states that let you do quantum mechanics on surfaces you
+          normally can't. In the winter I did{" "}
+          <a className="linkPurple" href="https://arxiv.org/abs/2206.14862">
+            some work
           </a>{" "}
-          through an NSERC USRA, covering some aspects of quantum state geometry
-          and information theory. I was also one of the organizers for the{" "}
+          in theoretical machine learning with{" "}
+          <a
+            className="linkPurple"
+            href="https://sites.google.com/site/borriewang/"
+          >
+            Boyu Wang
+          </a>{" "}
+          and{" "}
+          <a
+            className="linkPurple"
+            href="https://scholar.google.com/citations?user=BN1zmIQAAAAJ&hl=en"
+          >
+            Ghazal Farhani
+          </a>
+          , studying the convergence of neural networks used to solve PDEs (
+          <a
+            className="linkPurple"
+            href="https://en.wikipedia.org/wiki/Physics-informed_neural_networks"
+          >
+            PINNs
+          </a>
+          ).
+        </p>
+        <p>
+          This website is home to several posts I've made about things in math I
+          find interesting. The most recent one is about a technique used in
+          American option pricing. Some other mathy stuff I've done was help
+          with the{" "}
           <a className="linkPurple" href="https://cumc.math.ca/2021/">
-            2021 Canadian Undergraduate Mathematics Conference
+            2021 CUMC
           </a>
-          . My role was in creating the website, as well as organizing the
-          panels and workshops. I also presented an introduction to quantum
-          entanglement, which you can watch{" "}
+          , where I organized several of the panels and made the website. I also
+          made a{" "}
           <a
             className="linkPurple"
-            href="https://www.youtube.com/watch?v=K2HlbbaDlyE"
+            href="https://www.youtube.com/watch?v=4zD8Kd3HgJA"
           >
-            here
-          </a>
-          . Right now, I'm in charge of the academics for{" "}
-          <a
-            className="linkPurple"
-            href="https://www.uwo.ca/math/undergraduate/current_students/macaw/index.html"
-          >
-            MaCAW
-          </a>
-          , the official club of Western's mathematics department, putting on
-          events like student seminars.
+            video
+          </a>{" "}
+          with{" "}
+          <a className="linkPurple" href="https://www.jacquelinedoan.com/">
+            Jacqueline Đoàn
+          </a>{" "}
+          on the spectral theorem for normal operators.
         </p>
         <p>
           Outside of academics, I like to go rock climbing and do calisthenics.
-          I'm also interested in fashion, with my Instagram being mostly outfit
-          shots. Being interested in linguistics in general, I like learning
-          languages, and know some Russian and Japanese. Convincing myself that
-          it's cardio, I also play a lot of Beat Saber (here is my{" "}
-          <a
-            className="linkPurple"
-            href="https://scoresaber.com/u/76561198089263800"
-          >
-            Score Saber
-          </a>{" "}
-          profile).
+          I enjoy speedcubing, and play Beat Saber. I'm also interested in
+          linguistics.
         </p>
         <p>
           Feel free to read my blog posts or get in touch with me on my socials,
-          both of which are {str}. I hope you enjoy your stay. Food and drink is
+          both of which are {str}! I hope you enjoy your stay. Food and drink is
           not provided.
         </p>
         <p className="cv">
@@ -80,11 +103,12 @@ function About() {
           My résumé is available{" "}
           <a className="linkPurple" href={shortcv}>
             here
-          </a>{" "}
+          </a>
+          {/* {" "}
           and a full curriculum vitae{" "}
           <a className="linkPurple" href={cv}>
             here
-          </a>
+          </a>*/}
           . Last updated {cvDate}.
         </p>
       </div>

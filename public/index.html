@@ -11,17 +11,17 @@
     <!-- KaTeX -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
       crossorigin="anonymous"
     />
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
       crossorigin="anonymous"
     ></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
       crossorigin="anonymous"
     ></script>
     <script>
@@ -30,8 +30,6 @@
           /* i have the dollar signs here to include old posts without painful reformatting, however
           it doesnt actually matter as unlike in LaTeX, both $$ and \[ are the exact same in KaTeX */
           delimiters: [
-            { left: "$$", right: "$$", display: true },
-            { left: "$", right: "$", display: false },
             { left: "\\(", right: "\\)", display: false },
             { left: "\\[", right: "\\]", display: true }
           ]
@@ -58,6 +56,9 @@
         });
       }
     </script>
+    <!-- Prism -->
+    <link href="prism.css" rel="stylesheet" />
+    <script src="prism.js"></script>
   </head>
   <!-- dummy comment -->
   <body onload="firstLoadKaTeX()">

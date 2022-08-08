@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PostPreview from "../components/PostPreview";
 
 /* posts */
+import OptionMonteCarlo from "./writing/2022-08-06/OptionMonteCarlo";
 import Sobolev from "./writing/2021-11-14/Sobolev";
 import Entanglement from "./writing/2021-08-21/Entanglement";
 import SOME1 from "./writing/2021-08-16/SOME1";
@@ -21,6 +22,14 @@ class Posts extends Component {
     return (
       <div id="KaTeXSec" className="coDiv posts">
         <ul>
+          <PostPreview
+            date="2022-08-06"
+            dummyID="10"
+            name="Beyond Black-Scholes: Parametrizing the American Option Pricing Problem"
+            summary="<p>The Black-Scholes equation is a seminal result in mathematical finance, giving a quantitative backing to a key financial instrument: the option. However, this equation can only be used to price European options, not the ubiquitous American options. One pricing technique presented by <a target='_blank' style='font-weight: bold; color: #9e42f5;' href='https://doi.org/10.1016/S0165-1889(02)00086-6'>Diego García</a> is to use Monte-Carlo simulations to parametrize the optimal exercise points, and then to compute the value of the option under this exercise rule. The technique is derived and implemented numerically herein."
+            full={<OptionMonteCarlo />}
+            html={true}
+          ></PostPreview>
           <PostPreview
             date="2021-11-18"
             dummyID="9"

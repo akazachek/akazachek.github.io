@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
 /* pages in navbar */
@@ -9,7 +9,6 @@ import Posts from "./contents/Posts";
 import Contact from "./contents/Contact";
 
 function App() {
-  
   return (
     <Router>
       <div className="App">
@@ -27,7 +26,6 @@ function App() {
       </div>
     </Router>
   );
-  
 }
 
 export default App;

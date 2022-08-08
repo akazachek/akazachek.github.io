@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 
 class Figure extends Component {
-
   render() {
     return (
       <table className="figureContainer">
         <tr>
-          <td className="figure centredBox leftMarginWide">
+          <td
+            style={{
+              height: this.props.height == null ? "30vh" : this.props.height
+            }}
+            className="figure centredBox leftMarginWide"
+          >
             <img src={this.props.src} alt={this.props.caption}></img>
           </td>
         </tr>
@@ -20,7 +24,6 @@ class Figure extends Component {
       </table>
     );
   }
-
 }
 
 export default Figure;

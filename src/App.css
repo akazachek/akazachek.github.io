@@ -15,6 +15,7 @@ button {
   --fontsize-contactHandle: 3vh;
   --fontsize-nav: 4vh;
   --fontsize-norm: 1.2em;
+  --fontsize-code: 0.8em;
   --active-colour: #d7dade;
   --active-colour-dark: #5b5c5b;
   --accent-colour: #9e42f5;
@@ -38,6 +39,10 @@ button {
 .katex {
   font-size: 1em !important;
   font-family: "KaTeX_Main" !important;
+}
+
+.codeBlock pre {
+  font-size: var(--fontsize-code);
 }
 
 .App {
@@ -268,7 +273,43 @@ nav ul li a:visited {
   left: 0;
 }
 
+/* || DATA TABLE */
+
+.data {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.data table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data table thead {
+  border-bottom: 2px solid black;
+}
+
+.data table th {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1vh;
+  font-size: 1em;
+}
+
+.data table td {
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
 /* || ENVIRONMENTS */
+
+.codeBlock {
+  margin-bottom: 1em;
+}
+
 .figureContainer {
   margin-top: 1vh;
   margin-bottom: 2vh;

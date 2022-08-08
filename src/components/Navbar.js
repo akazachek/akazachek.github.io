@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import NavItem from "./NavItem";
 
 class NavBar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -48,8 +47,6 @@ class NavBar extends Component {
       </div>
     );
   }
-
-  
 }
 
 export default NavBar;
