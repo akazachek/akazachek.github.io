@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
 /* pages in navbar */
@@ -9,20 +9,18 @@ import Posts from "./contents/Posts";
 import Contact from "./contents/Contact";
 
 function App() {
+  const [path, setPath] = useState(window.location.pathname);
+
   return (
     <Router>
       <div className="App">
-        <NavBar />
-        {/* this will load the 'About' page by default but will not work locally */}
-        <Route exact path="/">
-          <About />
-        </Route>
-        <Route path="/Posts">
-          <Posts />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
+        <NavBar path={path} />
+        <Routes>
+          {/* this will load the 'About' page by default but will not work locally */}
+          <Route exact path="/" element={<About />} />
+          <Route path="/Posts" element={<Posts />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
       </div>
     </Router>
   );

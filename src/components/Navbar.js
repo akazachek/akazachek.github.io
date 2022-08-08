@@ -22,26 +22,39 @@ class NavBar extends Component {
     });
   };
 
+  componentWillMount() {
+    let page = "Who Am I?";
+    if (this.props.path == "/Posts") {
+      page = "Posts";
+    } else if (this.props.path == "/Contact") {
+      page = "Contact";
+    }
+    this.setState({ NavActiveItem: page });
+  }
+
   render() {
     return (
-      <div class="navContainer centredBox">
+      <div className="navContainer centredBox">
         <nav>
           <ul>
             <NavItem
+              active={this.state.NavActiveItem == "Who Am I?"}
               item="Who Am I?"
               tolink="/"
               click={this.handleClick}
-            ></NavItem>
+            />
             <NavItem
+              active={this.state.NavActiveItem == "Posts"}
               item="Posts"
               tolink="/Posts"
               click={this.handleClick}
-            ></NavItem>
+            />
             <NavItem
+              active={this.state.NavActiveItem == "Contact"}
               item="Contact"
               tolink="/Contact"
               click={this.handleClick}
-            ></NavItem>
+            />
           </ul>
         </nav>
       </div>

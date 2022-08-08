@@ -11,8 +11,8 @@ import {
 /* contact photo */
 import pfp from "../media/tottori.jpg";
 /* info from css */
-var accentColour = "#4c2a6e";
-var vh = window.innerHeight / 100;
+const accentColour = "#4c2a6e";
+const vh = window.innerHeight / 100;
 
 function Contact() {
   const pfpAlt = "Me riding a camel in the Tottori sanddunes";

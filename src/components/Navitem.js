@@ -10,14 +10,14 @@ class NavItem extends Component {
   }
 
   componentDidMount() {
-    if (this.props.item === "Who Am I?") {
+    if (this.props.active === true) {
       this.setState({ classes: "hvr-sweep-to-right navActive" });
     }
   }
 
   render() {
     return (
-      <li id={this.props.item} class={this.state.classes}>
+      <li id={this.props.item} className={this.state.classes}>
         <Link
           to={this.props.tolink}
           onClick={this.props.click.bind(this, this.props.item)}
