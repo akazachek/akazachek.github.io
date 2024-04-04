@@ -17,105 +17,101 @@ function About() {
         <h1> Hey, I'm Alex! </h1>
         <h3 style={{ paddingTop: "1vh" }}>
           {" "}
-          I'm currently an intern on the systematic trading team at{" "}
+          I'm currently a master's student at the{" "}
           <a
             className="linkPurple"
-            href="https://www.otpp.com/en-ca/investments/our-investments/capital-markets/quantitative-strategy-research/"
+            href="https://uwaterloo.ca/institute-for-quantum-computing/"
           >
-            OTPP
+            IQC
           </a>
           .
         </h3>
         <br></br>
         <p>
-          I'm working in portfolio construction, researching ways to improve
-          volatility estimation and normalization. Before that I was an
-          undergrad in math and data science at{" "}
+          My interests are broadly in quantum information theory, tending
+          towards aspects of entropy measures and channel capacities. I'm mainly
+          thinking about channel additivity conjectures right now. My advisor is{" "}
+          <a
+            className="linkPurple"
+            href="https://uwaterloo.ca/institute-for-quantum-computing/profiles/graeme-smith"
+          >
+            Graeme Smith
+          </a>
+          .
+        </p>
+        <p>
+          I did my undergrad in math and data science at{" "}
           <a className="linkPurple" href="https://www.uwo.ca/">
             UWO
           </a>
-          , primarily supervised by{" "}
+          , where I worked under{" "}
           <a
             className="linkPurple"
             href="https://www.math.uwo.ca/faculty/barron/barron.html"
           >
             Tatyana Barron
           </a>
-          . In September I'll be starting my master's in applied math at{" "}
-          <a className="linkPurple" href="https://uwaterloo.ca/">
-            Waterloo
+          . We derived{" "}
+          <a className="linkPurple" href="https://arxiv.org/abs/2303.06185">
+            some lower bounds
           </a>{" "}
-          under{" "}
-          <a
-            className="linkPurple"
-            href="https://www.colorado.edu/physics/graeme-smith"
-          >
-            Graeme Smith
-          </a>
-          , joint with the{" "}
-          <a
-            className="linkPurple"
-            href="https://uwaterloo.ca/institute-for-quantum-computing/ "
-          >
-            IQC
-          </a>
-          .
-        </p>
-        <p>
-          During my undergrad I did some research in mathematical physics,
-          mostly about{" "}
+          for the entanglement entropy of certain{" "}
           <a
             className="linkPurple"
             href="https://en.wikipedia.org/wiki/Coherent_states_in_mathematical_physics"
           >
             coherent states
-          </a>
-          . These are mathematical objects inspired by quantum mechanical
-          descriptions of the light emitted by a laser. With Tatyana, I derived
-          a{" "}
-          <a className="linkPurple" href="https://arxiv.org/abs/2303.06185">
-            lower bound
           </a>{" "}
-          for the entanglement of certain pairs of coherent states, which will
-          be presented later this summer at{" "}
-          <a className="linkPurple" href="https://conference-gsi.org/">
-            GSI 2023
-          </a>
-          . I also wrote my (unofficial){" "}
+          (and{" "}
+          <a className="linkPurple" href="https://arxiv.org/abs/2303.06185">
+            here
+          </a>{" "}
+          is the talk!). She also supervised my{" "}
           <a className="linkPurple" href={thesis}>
             undergrad thesis
           </a>{" "}
-          on bicoherent states, the analogues of coherent states in a slightly
-          esoteric{" "}
+          on bicoherent states, generalizations of coherent states to{" "}
           <a
             className="linkPurple"
             href="https://en.wikipedia.org/wiki/Non-Hermitian_quantum_mechanics"
           >
-            generalization of quantum mechanics
+            non-Hermitian settings
           </a>
-          .
-        </p>
-        <p>
-          I also did some work in theoretical machine learning under{" "}
+          . I briefly worked with{" "}
           <a
             className="linkPurple"
             href="https://sites.google.com/site/borriewang/home"
           >
             Boyu Wang
-          </a>
-          . We studied{" "}
+          </a>{" "}
+          as well, on{" "}
           <a
             className="linkPurple"
             href="https://en.wikipedia.org/wiki/Physics-informed_neural_networks"
           >
             PINNs
           </a>
-          , neural networks used to solve PDEs. We proved that optimizing these
-          networks with momentum results in{" "}
+          , neural networks used to solve PDEs, where we proved optimizing them
+          with momentum results in{" "}
           <a className="linkPurple" href="https://arxiv.org/abs/2206.14862">
             less spectral bias
           </a>
-          , meaning different components of the solutions are learned evenly.
+          .
+        </p>
+        <p>
+          This past summer I worked on the systematic trading team at{" "}
+          <a
+            className="linkPurple"
+            href="https://www.otpp.com/en-ca/investments/our-investments/capital-markets/quantitative-strategy-research/"
+          >
+            OTPP
+          </a>
+          , on a project about volatility estimation for portfolio construction.
+          In the coming summer I'll be on an HFT equity desk at{" "}
+          <a className="linkPurple" href="https://www.tdsecurities.com/ca/en">
+            TD Securities
+          </a>
+          .
         </p>
         {/*
         <p>
@@ -146,9 +142,17 @@ function About() {
           linguistics.
   </p>*/}
         <p>
-          Feel free to read my blog posts or get in touch with me on my socials,
-          both of which are {str}! I hope you enjoy your stay. Food and drink is
-          not provided.
+          In my spare time I enjoy reading, and recently have been getting into
+          poetry. I also play{" "}
+          <a
+            className="linkPurple"
+            href="https://beatleader.xyz/u/76561198089263800"
+          >
+            Beat Saber
+          </a>{" "}
+          and Scrabble. Feel free to read my blog posts or get in touch with me
+          on my socials, both of which are {str}! I hope you enjoy your stay.
+          Food and drink is not provided.
         </p>
         <p className="cv">
           {" "}

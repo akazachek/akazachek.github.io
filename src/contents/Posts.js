@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PostPreview from "../components/PostPreview";
 
 /* posts */
+import DvoretzkyChannel from "./writing/2024-02-15/DvoretzkyChannel";
 import OptionMonteCarlo from "./writing/2022-08-06/OptionMonteCarlo";
 import Sobolev from "./writing/2021-11-14/Sobolev";
 import Entanglement from "./writing/2021-08-21/Entanglement";
@@ -22,6 +23,14 @@ class Posts extends Component {
     return (
       <div id="KaTeXSec" className="coDiv posts">
         <ul>
+          <PostPreview
+            date="2024-04-03"
+            dummyID="11"
+            name="Gluing Quantum Tin Cans and Asymptotic Geometric Analysis"
+            summary="Quantum channels let two parties communicate by sending quantum states. Inspired by classical notions, quantum Shannon theory seeks to understand how efficiently information may be communicated across these channels. An infamous conjecture in the field, and long believed to be true, concerns itself with the minimum output \(p\)-entropy of a channel, which in some way quantifies its propensity for communication. Herein this quantity is introduced and its lineage is traced back to classical information theory. A central result in asymptotic geometric analysis, Dvoretzky's theorem, is also covered, and subsequently the modern (dis!)proof of the conjecture for \(p>1\) is given."
+            full={<DvoretzkyChannel />}
+            html={true}
+          ></PostPreview>
           <PostPreview
             date="2022-08-08"
             dummyID="10"

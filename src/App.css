@@ -152,9 +152,10 @@ nav ul li a:visited {
   flex-direction: column;
 }
 .pfp {
-  border-radius: 50%;
+  border-radius: 30%;
   width: auto;
   height: 30vh;
+  margin-top: 2vh;
 }
 .about p,
 .postContent p,
@@ -459,13 +460,6 @@ nav ul li a:visited {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-
-  .pfp {
-    border-radius: 50%;
-    width: auto;
-    height: 20vh;
-    margin-top: 2vh;
   }
 
   .posts ul {
