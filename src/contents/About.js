@@ -114,7 +114,7 @@ function About() {
             OTPP
           </a>
           , on a project about volatility estimation for portfolio construction.
-          In the coming summer I'll be on an HFT equity desk at{" "}
+          In the coming summer I'll be on an equity HFT desk at{" "}
           <a className="linkPurple" href="https://www.tdsecurities.com/ca/en">
             TD Securities
           </a>
