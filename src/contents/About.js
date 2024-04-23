@@ -27,6 +27,7 @@ function About() {
           .
         </h3>
         <br></br>
+        <br></br>
         <p>
           My interests are broadly in quantum information theory, tending
           towards aspects of entropy measures and channel capacities. I'm mainly
@@ -43,7 +44,7 @@ function About() {
           >
             a video
           </a>
-          for TedED about math and axioms!
+          {" "}for TedED about math and axioms!
         </p>
         <p>
           I did my undergrad in math and data science at{" "}
