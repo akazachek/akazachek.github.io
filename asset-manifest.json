@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2e2f0e7c.css",
-    "main.js": "/static/js/main.046db8f9.js",
+    "main.js": "/static/js/main.53d41738.js",
     "static/media/kazachek.pdf": "/static/media/kazachek.1e35d4b89b0341c65996.pdf",
     "static/media/fig4(gp).jpg": "/static/media/fig4(gp).52edce34184c638c226a.jpg",
     "static/media/geom_entangle.pdf": "/static/media/geom_entangle.3f345b4a5fa052de87da.pdf",
@@ -24,10 +24,10 @@
     "static/media/fig1records.png": "/static/media/fig1records.193c1ea7b50a9c810085.png",
     "index.html": "/index.html",
     "main.2e2f0e7c.css.map": "/static/css/main.2e2f0e7c.css.map",
-    "main.046db8f9.js.map": "/static/js/main.046db8f9.js.map"
+    "main.53d41738.js.map": "/static/js/main.53d41738.js.map"
   },
   "entrypoints": [
     "static/css/main.2e2f0e7c.css",
-    "static/js/main.046db8f9.js"
+    "static/js/main.53d41738.js"
   ]
 }
