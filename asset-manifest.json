@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.2e2f0e7c.css",
-    "main.js": "/static/js/main.53d41738.js",
+    "main.js": "/static/js/main.f0d6e3a9.js",
     "static/media/kazachek.pdf": "/static/media/kazachek.1e35d4b89b0341c65996.pdf",
     "static/media/fig4(gp).jpg": "/static/media/fig4(gp).52edce34184c638c226a.jpg",
     "static/media/geom_entangle.pdf": "/static/media/geom_entangle.3f345b4a5fa052de87da.pdf",
     "static/media/paper.pdf": "/static/media/paper.e4cc4ad315c67234dc58.pdf",
     "static/media/me.jpg": "/static/media/me.be7a3648df87a4320a88.jpg",
     "static/media/stockpaths.png": "/static/media/stockpaths.59c405884cf58eb1a66e.png",
-    "static/media/shortcv.pdf": "/static/media/shortcv.80968a464cd7385bdc2e.pdf",
+    "static/media/shortcv.pdf": "/static/media/shortcv.7d7615085a0be221951a.pdf",
     "static/media/tottori.jpg": "/static/media/tottori.f5f93e6223e4f3367a81.jpg",
     "static/media/fig3(wind).png": "/static/media/fig3(wind).3c138aead08cfad989e5.png",
     "static/media/fig1(koch).png": "/static/media/fig1(koch).b55a4c6d379397374a6a.png",
@@ -24,10 +24,10 @@
     "static/media/fig1records.png": "/static/media/fig1records.193c1ea7b50a9c810085.png",
     "index.html": "/index.html",
     "main.2e2f0e7c.css.map": "/static/css/main.2e2f0e7c.css.map",
-    "main.53d41738.js.map": "/static/js/main.53d41738.js.map"
+    "main.f0d6e3a9.js.map": "/static/js/main.f0d6e3a9.js.map"
   },
   "entrypoints": [
     "static/css/main.2e2f0e7c.css",
-    "static/js/main.53d41738.js"
+    "static/js/main.f0d6e3a9.js"
   ]
 }
