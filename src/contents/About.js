@@ -6,7 +6,7 @@ import thesis from "../media/kazachek.pdf";
 
 function About() {
   const pfpAlt = "Headshot";
-  const cvDate = "2023-05-03";
+  const cvDate = "2024-04-23";
   const str = MobileDetector() ? "above" : "to the left";
 
   return (
@@ -37,7 +37,13 @@ function About() {
           >
             Graeme Smith
           </a>
-          .
+          . Recently, I made <a
+            className="linkPurple"
+            href="https://www.youtube.com/watch?v=seugK4PrW48"
+          >
+            a video
+          </a>
+          for TedED about math and axioms!
         </p>
         <p>
           I did my undergrad in math and data science at{" "}
