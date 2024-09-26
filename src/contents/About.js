@@ -6,16 +6,15 @@ import thesis from "../media/kazachek.pdf";
 
 function About() {
   const pfpAlt = "Headshot";
-  const cvDate = "2024-04-23";
+  const cvDate = "2024-09-26";
   const str = MobileDetector() ? "above" : "to the left";
 
   return (
     <div className="coDiv">
       <div className="about centredBox leftMarginWide" id="aboutSec">
         <img src={pfp} alt={pfpAlt} className="pfp"></img>
-        <br></br>
-        <h1> Hey, I'm Alex! </h1>
-        <h3 style={{ paddingTop: "1vh" }}>
+        <h1 style={{ paddingTop: "1vh" }}> Hey, I'm Alex! </h1>
+        <h3 style={{ paddingTop: "1vh", paddingBottom: "1vh" }}>
           {" "}
           I'm currently a master's student at the{" "}
           <a
@@ -26,25 +25,24 @@ function About() {
           </a>
           .
         </h3>
-        <br></br>
-        <br></br>
         <p>
-          My interests are broadly in quantum information theory, tending
-          towards aspects of entropy measures and channel capacities. I'm mainly
-          thinking about channel additivity conjectures right now. My advisor is{" "}
+          My interests are broadly in quantum information theory. I'm mainly
+          thinking about channel capacity additivity conjectures right now. My
+          advisor is{" "}
           <a
             className="linkPurple"
             href="https://uwaterloo.ca/institute-for-quantum-computing/profiles/graeme-smith"
           >
             Graeme Smith
           </a>
-          . Recently, I made <a
+          . Recently, I made{" "}
+          <a
             className="linkPurple"
             href="https://www.youtube.com/watch?v=seugK4PrW48"
           >
             a video
-          </a>
-          {" "}for TedED about math and axioms!
+          </a>{" "}
+          for TED-Ed about math and axioms!
         </p>
         <p>
           I did my undergrad in math and data science at{" "}
@@ -91,7 +89,7 @@ function About() {
           >
             Boyu Wang
           </a>{" "}
-          as well, on{" "}
+          as well on{" "}
           <a
             className="linkPurple"
             href="https://en.wikipedia.org/wiki/Physics-informed_neural_networks"
@@ -106,19 +104,21 @@ function About() {
           .
         </p>
         <p>
-          This past summer I worked on the systematic trading team at{" "}
+          This past summer I worked on an equity HFT desk at{" "}
+          <a className="linkPurple" href="https://www.tdsecurities.com/ca/en">
+            TD Securities
+          </a>
+          , where I did some research in time series forecasting and developed
+          an order book simulator. Prior to that I was on the systematic trading
+          team at{" "}
           <a
             className="linkPurple"
             href="https://www.otpp.com/en-ca/investments/our-investments/capital-markets/quantitative-strategy-research/"
           >
             OTPP
           </a>
-          , on a project about volatility estimation for portfolio construction.
-          In the coming summer I'll be on an equity HFT desk at{" "}
-          <a className="linkPurple" href="https://www.tdsecurities.com/ca/en">
-            TD Securities
-          </a>
-          .
+          , helping on a project about volatility estimation for portfolio
+          construction.
         </p>
         {/*
         <p>
@@ -149,8 +149,8 @@ function About() {
           linguistics.
   </p>*/}
         <p>
-          In my spare time I enjoy reading, and recently have been getting into
-          poetry. I also play{" "}
+          In my spare time I enjoy reading, writing poetry, and have recently
+          learned to crochet. I also play{" "}
           <a
             className="linkPurple"
             href="https://beatleader.xyz/u/76561198089263800"
