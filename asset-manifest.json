@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.95c0f306.css",
-    "main.js": "/static/js/main.7600899b.js",
+    "main.js": "/static/js/main.3a15cb3d.js",
     "static/media/kazachek.pdf": "/static/media/kazachek.1e35d4b89b0341c65996.pdf",
     "static/media/fig4(gp).jpg": "/static/media/fig4(gp).52edce34184c638c226a.jpg",
     "static/media/geom_entangle.pdf": "/static/media/geom_entangle.3f345b4a5fa052de87da.pdf",
+    "static/media/paper_markov.pdf": "/static/media/paper_markov.ed3a0c15f14b35ce8357.pdf",
     "static/media/paper.pdf": "/static/media/paper.e4cc4ad315c67234dc58.pdf",
     "static/media/me.jpg": "/static/media/me.be7a3648df87a4320a88.jpg",
     "static/media/stockpaths.png": "/static/media/stockpaths.59c405884cf58eb1a66e.png",
@@ -24,10 +25,10 @@
     "static/media/fig1records.png": "/static/media/fig1records.193c1ea7b50a9c810085.png",
     "index.html": "/index.html",
     "main.95c0f306.css.map": "/static/css/main.95c0f306.css.map",
-    "main.7600899b.js.map": "/static/js/main.7600899b.js.map"
+    "main.3a15cb3d.js.map": "/static/js/main.3a15cb3d.js.map"
   },
   "entrypoints": [
     "static/css/main.95c0f306.css",
-    "static/js/main.7600899b.js"
+    "static/js/main.3a15cb3d.js"
   ]
 }
