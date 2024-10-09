@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PostPreview from "../components/PostPreview";
 
 /* posts */
+import Markov from "./writing/2024-10-09/Markov";
 import DvoretzkyChannel from "./writing/2024-02-15/DvoretzkyChannel";
 import OptionMonteCarlo from "./writing/2022-08-06/OptionMonteCarlo";
 import Sobolev from "./writing/2021-11-14/Sobolev";
@@ -23,6 +24,13 @@ class Posts extends Component {
     return (
       <div id="KaTeXSec" className="coDiv posts">
         <ul>
+          <PostPreview
+            date="2024-10-09"
+            dummyID="12"
+            name="Markov Processes, Contraction Semigroups, and Infinitesimal Generators"
+            summary="Markov processes are stochastic processes with restrictions on their conditional probabilities so that their updates depend only on their most recent realizations. Each Markov process is intimately connected with an operator known as its infinitesimal generator, allowing one to recover the process (or rather, its semigroup) through exponentiation. The two-way relationship between these processes and their generators are the contents of the celebrated Hille-Yosida and Lumer-Phillips theorems, which are explicated herein. This necessitates a focus on Feller processes, of which the canonical Markov process – the Weiner process – is an instance, and is thus explored in the one-dimensional case."
+            full={<Markov />}
+          ></PostPreview>
           <PostPreview
             date="2024-04-03"
             dummyID="11"
