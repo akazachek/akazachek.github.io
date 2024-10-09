@@ -61,8 +61,8 @@ class Markov extends Component {
         </p>
         <p>
           We declare that a generic Banach space will be{" "}
-          {"\\((X,\\|\\cdot\\|)\\)"}, with {"\\(\\C\\)"} the underlying field
-          and identity {"\\(\\mathbb{1}\\)"}. Note that{" "}
+          {"\\((X,\\|\\cdot\\|)\\)"}, with {"\\(\\mathbb{C}\\)"} the underlying
+          field and identity {"\\(\\mathbb{1}\\)"}. Note that{" "}
           {"\\(\\mathscr{B}(E),\\mathscr{C}(E)\\)"}, and{" "}
           {"\\(\\mathscr{C}_0(E)\\)"} are all Banach when endowed with the
           infinity-norm
